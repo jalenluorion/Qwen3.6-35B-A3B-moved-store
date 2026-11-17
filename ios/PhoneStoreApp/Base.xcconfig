@@ -1,0 +1,11 @@
+// Signing for the PhoneStoreApp target. Committed; do not put your own values here.
+//
+// Your Apple team and bundle id go in Local.xcconfig next to this file (git-ignored). Either run ../../setup.sh,
+// which writes it, or copy Config.example.xcconfig to Local.xcconfig and fill it in. You can also skip both and pick
+// your team and change the bundle id in Xcode (target PhoneStoreApp > Signing & Capabilities): Xcode then stores
+// them in the project and they take precedence over this file.
+
+DEVELOPMENT_TEAM =
+BUNDLE_ID = com.example.phonestore
+
+#include? "Local.xcconfig"

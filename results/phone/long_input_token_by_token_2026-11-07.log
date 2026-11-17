@@ -1,0 +1,124 @@
+=== 512-token input (tail text) -prefillChunk auto 02:55:50
+02:55:50  Acquired tunnel connection to device.
+02:55:50  Enabling developer disk image services.
+02:55:50  Acquired usage assertion.
+App installed:
+? bundleID: com.example.phonestore
+? installationURL: file:///private/var/containers/Bundle/Application/99C29E1C-FF50-478A-B875-D248AA60966D/PhoneStoreApp.app/
+? launchServicesIdentifier: unknown
+? databaseUUID: E966648E-9F55-417B-9841-F2E76FA47A63
+? databaseSequenceNumber: 3836
+? options: 
+pulled runs/probe-20261107-025551.json
+pulled runs/autotest-20261107-025551.json
+pulled runs/mem-20261107-025551.jsonl
+pulled runs/ui-20261107-025551.json
+ENGINE PhoneStore (native: -autotest always runs the native engine) mode=prefetch
+DIAG memWarn=log chatOnce=fe of the author when interpreting a work , a practice which Burton Watson attributes to " the close links that traditional Chinese thought posits between art and morality " . Since many of Du Fu 's poems feature morality and history , this practice is particularly important . Another reason , identified by the Chinese historian William Hung , is that Chinese poems are typically concise , omitting context that might be relevant , but which an informed contemporary could be assumed to know . For modern Western readers , " The less accurately we know the time , the place and the circumstances in the background , the more liable we are to imagine it incorrectly , and the result will be that we either misunderstand the poem or fail to understand it altogether " . Stephen Owen suggests a third factor particular to Du Fu , arguing that the variety of the poet 's work required consideration of his whole life , rather than the " reductive " categorizations used for more limited poets . = = = Early years = = = Most of what is known of Du Fu 's life comes from his poems . His paternal grandfather was Du Shenyan , a noted politician and poet during the reign of Empress Wu . Du Fu was born in 712 ; the exact birthplace is unknown , except that it was near Luoyang , Henan province ( Gong county is a favourite candidate ) . In later life , he considered himself to belong to the capital city of Chang 'an , ancestral hometown of the Du family . Du Fu 's mother died shortly after he was born , and he was partially raised by his aunt . He had an elder brother , who died young . He also had three half brothers and one half sister , to whom he frequently refers in his poems , although he never mentions his stepmother . The son of a minor scholar @-@ official , his youth was spent on the standard education of a future civil servant : study and memorisation of the Confucian classics of philosophy , history and poetry . He later claimed to have produced creditable poems by his early teens , but these have been lost . In the early 730s , he travelled in the Jiangsu / Zhejiang area ; his earliest surviving poem , describing a poetry contest , is thought to date from the end of this peri historyMode=live mappedWeightsInUse=0 maxNew=20 mode=prefetch prefixCache=on
+MEM launch: footprint=0.009 peak=0.009 avail=4.286 limit~4.295 GB | mlx active=n/a peak=n/a cache=n/a GB | resident=0.030 file-backed=0.022 compressed=0.000 GB | faults=4134 pageins=1482 | thermal=nominal
+PROBE avail=4.27GB phys=5.94GB disk_free=8.25GB thermal=nominal cap=18 (budget) layer_caps=auto:720 slots=720 layout=slim store=complete (0 problems) codec_layers=40
+LOAD tokenizer + chat template from model/
+LOAD kernels: mlx.metallib (-fno-fast-math): /var/containers/Bundle/Application/99C29E1C-FF50-478A-B875-D248AA60966D/PhoneStoreApp.app/mlx.metallib
+LOAD weights loaded: resident 1.10 GB + routers 0.33 GB; phys_footprint 0.175 -> 1.541 GB (+1.366), resident pages +0.855 GB (file-backed +0.001)
+LOAD loaded in 3.8s
+LOAD ready in 4.1s: prefetch, cap 18, 2.75 GB planned, layout slim
+LOAD layout slim: embeddings /var/mobile/Containers/Data/Application/D7571BB9-4492-430C-8F13-7499BB853111/Documents/model/embeddings.safetensors; resident /var/mobile/Containers/Data/Application/D7571BB9-4492-430C-8F13-7499BB853111/Documents/model/cache/resident_q4.safetensors; routers /var/mobile/Containers/Data/Application/D7571BB9-4492-430C-8F13-7499BB853111/Documents/model/cache/routers_k4_r8.safetensors
+LOAD ready: native runtime (mlx-swift 0.32.3, MLX core 0.32.3); prefetch, int8 lag-4 routers, cap 18 (auto:720, 720 slots); layout slim; codec: 40 layers .psc; kernels: mlx.metallib (-fno-fast-math): /var/containers/Bundle/Application/99C29E1C-FF50-478A-B875-D248AA60966D/PhoneStoreApp.app/mlx.metallib
+MEM after load: footprint=2.829 peak=2.829 avail=1.466 limit~4.295 GB | mlx active=2.712 peak=2.712 cache=0.000 GB | resident=1.083 file-backed=0.044 compressed=0.510 GB | faults=106439 pageins=2095 | thermal=nominal
+PREFIXCACHE stale warm-up end states deleted: 0 | tails 14 tokens / 12 tokens / 10 tokens
+CHATONCE fe of the author when interpreting a work , a practice which Burton Watson attributes to " the close links that traditional Chinese thought posits between art and morality " . Since many of Du Fu 's poems feature morality and history , this practice is particularly important . Another reason , identified by the Chinese historian William Hung , is that Chinese poems are typically concise , omitting context that might be relevant , but which an informed contemporary could be assumed to know . For modern Western readers , " The less accurately we know the time , the place and the circumstances in the background , the more liable we are to imagine it incorrectly , and the result will be that we either misunderstand the poem or fail to understand it altogether " . Stephen Owen suggests a third factor particular to Du Fu , arguing that the variety of the poet 's work required consideration of his whole life , rather than the " reductive " categorizations used for more limited poets . = = = Early years = = = Most of what is known of Du Fu 's life comes from his poems . His paternal grandfather was Du Shenyan , a noted politician and poet during the reign of Empress Wu . Du Fu was born in 712 ; the exact birthplace is unknown , except that it was near Luoyang , Henan province ( Gong county is a favourite candidate ) . In later life , he considered himself to belong to the capital city of Chang 'an , ancestral hometown of the Du family . Du Fu 's mother died shortly after he was born , and he was partially raised by his aunt . He had an elder brother , who died young . He also had three half brothers and one half sister , to whom he frequently refers in his poems , although he never mentions his stepmother . The son of a minor scholar @-@ official , his youth was spent on the standard education of a future civil servant : study and memorisation of the Confucian classics of philosophy , history and poetry . He later claimed to have produced creditable poems by his early teens , but these have been lost . In the early 730s , he travelled in the Jiangsu / Zhejiang area ; his earliest surviving poem , describing a poetry contest , is thought to date from the end of this peri
+[prefix-cache] miss: no cached prefix of the 464 tokens | cache: 4 entries, 0.28 GB
+MEM reply 1 first token: footprint=2.974 peak=2.974 avail=1.321 limit~4.295 GB | mlx active=2.788 peak=2.798 cache=0.016 GB | resident=1.128 file-backed=0.026 compressed=0.502 GB | faults=115420 pageins=3401 | thermal=nominal
+MEM reply 1 token 10: footprint=2.975 peak=2.975 avail=1.320 limit~4.295 GB | mlx active=2.788 peak=2.798 cache=0.016 GB | resident=1.111 file-backed=0.024 compressed=0.518 GB | faults=115663 pageins=3508 | thermal=nominal
+MEM reply 1 token 20: footprint=2.975 peak=2.975 avail=1.320 limit~4.295 GB | mlx active=2.788 peak=2.798 cache=0.016 GB | resident=1.112 file-backed=0.025 compressed=0.517 GB | faults=115753 pageins=3520 | thermal=nominal
+REPLY tokens=20 reason=max_new 4.22 tok/s 191.4 MB/token
+UI reply=1 decode_tok_s=4.224 engine_tok_s=4.217 diff=0.17% ttft_ms=117185 (engine 117182) mb_per_token=191.4 (engine 191.4) prefill=cold
+PREFIX reply=1 hit=0 restored_tokens=n/a restore=n/a ms (load n/a ms, state n/a MB; re-land n/a ms, n/a MB read, n/a read / n/a kept / n/a moved) saved=0 save=0 ms (0.0 MB) cache=4 states 280 MB
+PREFILL reply=1 tokens=464 seconds=116.90 read=91575.0 MB records=59963 drive=0.783 GB/s (busy 0.852) blocked_on_reads=111635 ms gpu=51068 ms encode=5225 ms template=10.6 ms first_token=222.2 ms
+SPLIT reply=1 tokens=20 tok/s=4.217 ms/token=237.1 encode=9.8 blocked_on_reads=212.9 (name 2.0 land 210.9) sync_wait=13.4 gpu=107.2 ms gpu_busy=45.2% drive=0.807 GB/s busy=0.886 GB/s (91% of the time) MiB/token=182.6 in_memory=0.8645 sync_reads=0 records/token=125.40 reads_in_flight=7.16
+MEM end of reply 1 (20 tokens, max_new): footprint=2.975 peak=2.975 avail=1.320 limit~4.295 GB | mlx active=2.788 peak=2.798 cache=0.016 GB | resident=1.123 file-backed=0.025 compressed=0.506 GB | faults=116512 pageins=3552 | thermal=nominal
+SHOWN conversation_title = fe of the author when interpreting a work , a p…
+SHOWN conversation_tokens = 484
+SHOWN memory_dot = good
+SHOWN message_caption_1 = prefilled 464 tokens (cold) · first token 117.2 s · 4.2 tok/s · length limit
+SHOWN prefill = cold
+SHOWN settings_last_reply = 20 tokens, max_new, 4.22 tok/s
+SHOWN settings_live_rate = 4.22
+SHOWN stats_bar_mb = 191 MB/tok
+SHOWN stats_bar_rate = 4.22 tok/s
+SHOWN stats_bar_ttft = TTFT 117.2 s
+SHOWN status_line = 4.2 tok/s · first token 117.2 s
+SHOWN status_line_1 = 4.2 tok/s · first token 117.2 s
+SHOWN thermal_dot = good
+SHOWN tools_1 = off
+[prefix-cache] reply end: fed 5 end tokens in 1.594 s, saved 489 tokens -> n0000489-5eff96eaf2173dbb60f65cdc8abd853932e0de2bc55c8b96754751afd628f111.safetensors (75.8 MB, 0.282 s) | cache: 5 entries, 0.36 GB | 1.893 s in all
+PREFIXCACHE on: 5 states, 356 MB in prefix/, LRU cap 1.5 GB
+console: runs/console-20261107-025551.log
+SETTING prefill = token by token
+SETTING prefill read-ahead = off
+[prefix-cache] miss: no cached prefix of the 464 tokens | cache: 4 entries, 0.28 GB
+MEM reply 1 first token: footprint=2.974 peak=2.974 avail=1.321 limit~4.295 GB | mlx active=2.788 peak=2.798 cache=0.016 GB | resident=1.128 file-backed=0.026 compressed=0.502 GB | faults=115420 pageins=3401 | thermal=nominal
+UI reply=1 decode_tok_s=4.224 engine_tok_s=4.217 diff=0.17% ttft_ms=117185 (engine 117182) mb_per_token=191.4 (engine 191.4) prefill=cold
+PREFILL reply=1 tokens=464 seconds=116.90 read=91575.0 MB records=59963 drive=0.783 GB/s (busy 0.852) blocked_on_reads=111635 ms gpu=51068 ms encode=5225 ms template=10.6 ms first_token=222.2 ms
+=== 512-token input (tail text) -prefillChunk 128 03:00:04
+03:00:04  Acquired tunnel connection to device.
+03:00:04  Enabling developer disk image services.
+03:00:04  Acquired usage assertion.
+App installed:
+? bundleID: com.example.phonestore
+? installationURL: file:///private/var/containers/Bundle/Application/324379A4-F230-48A4-A9AC-A884C4F0539D/PhoneStoreApp.app/
+? launchServicesIdentifier: unknown
+? databaseUUID: E966648E-9F55-417B-9841-F2E76FA47A63
+? databaseSequenceNumber: 3844
+? options: 
+pulled runs/probe-20261107-030005.json
+pulled runs/autotest-20261107-030005.json
+pulled runs/mem-20261107-030005.jsonl
+pulled runs/ui-20261107-030005.json
+ENGINE PhoneStore (native: -autotest always runs the native engine) mode=prefetch
+DIAG memWarn=log chatOnce=fe of the author when interpreting a work , a practice which Burton Watson attributes to " the close links that traditional Chinese thought posits between art and morality " . Since many of Du Fu 's poems feature morality and history , this practice is particularly important . Another reason , identified by the Chinese historian William Hung , is that Chinese poems are typically concise , omitting context that might be relevant , but which an informed contemporary could be assumed to know . For modern Western readers , " The less accurately we know the time , the place and the circumstances in the background , the more liable we are to imagine it incorrectly , and the result will be that we either misunderstand the poem or fail to understand it altogether " . Stephen Owen suggests a third factor particular to Du Fu , arguing that the variety of the poet 's work required consideration of his whole life , rather than the " reductive " categorizations used for more limited poets . = = = Early years = = = Most of what is known of Du Fu 's life comes from his poems . His paternal grandfather was Du Shenyan , a noted politician and poet during the reign of Empress Wu . Du Fu was born in 712 ; the exact birthplace is unknown , except that it was near Luoyang , Henan province ( Gong county is a favourite candidate ) . In later life , he considered himself to belong to the capital city of Chang 'an , ancestral hometown of the Du family . Du Fu 's mother died shortly after he was born , and he was partially raised by his aunt . He had an elder brother , who died young . He also had three half brothers and one half sister , to whom he frequently refers in his poems , although he never mentions his stepmother . The son of a minor scholar @-@ official , his youth was spent on the standard education of a future civil servant : study and memorisation of the Confucian classics of philosophy , history and poetry . He later claimed to have produced creditable poems by his early teens , but these have been lost . In the early 730s , he travelled in the Jiangsu / Zhejiang area ; his earliest surviving poem , describing a poetry contest , is thought to date from the end of this peri historyMode=live mappedWeightsInUse=0 maxNew=20 mode=prefetch prefixCache=on
+MEM launch: footprint=0.009 peak=0.009 avail=4.286 limit~4.295 GB | mlx active=n/a peak=n/a cache=n/a GB | resident=0.030 file-backed=0.022 compressed=0.000 GB | faults=3712 pageins=1031 | thermal=nominal
+PROBE avail=4.27GB phys=5.94GB disk_free=8.17GB thermal=nominal cap=18 (budget) layer_caps=auto:720 slots=720 layout=slim store=complete (0 problems) codec_layers=40
+LOAD tokenizer + chat template from model/
+LOAD kernels: mlx.metallib (-fno-fast-math): /var/containers/Bundle/Application/324379A4-F230-48A4-A9AC-A884C4F0539D/PhoneStoreApp.app/mlx.metallib
+LOAD weights loaded: resident 1.10 GB + routers 0.33 GB; phys_footprint 0.175 -> 1.617 GB (+1.442), resident pages +1.374 GB (file-backed +0.001)
+LOAD loaded in 1.9s
+LOAD ready in 2.2s: prefetch, cap 18, 2.75 GB planned, layout slim
+LOAD layout slim: embeddings /var/mobile/Containers/Data/Application/8D6E07B7-B059-4C14-9A6F-C3B95B35AB9A/Documents/model/embeddings.safetensors; resident /var/mobile/Containers/Data/Application/8D6E07B7-B059-4C14-9A6F-C3B95B35AB9A/Documents/model/cache/resident_q4.safetensors; routers /var/mobile/Containers/Data/Application/8D6E07B7-B059-4C14-9A6F-C3B95B35AB9A/Documents/model/cache/routers_k4_r8.safetensors
+LOAD ready: native runtime (mlx-swift 0.32.3, MLX core 0.32.3); prefetch, int8 lag-4 routers, cap 18 (auto:720, 720 slots); layout slim; codec: 40 layers .psc; kernels: mlx.metallib (-fno-fast-math): /var/containers/Bundle/Application/324379A4-F230-48A4-A9AC-A884C4F0539D/PhoneStoreApp.app/mlx.metallib
+MEM after load: footprint=2.898 peak=2.898 avail=1.397 limit~4.295 GB | mlx active=2.712 peak=2.712 cache=0.000 GB | resident=1.532 file-backed=0.044 compressed=0.131 GB | faults=104854 pageins=1467 | thermal=nominal
+PREFIXCACHE stale warm-up end states deleted: 0 | tails 14 tokens / 12 tokens / 10 tokens
+CHATONCE fe of the author when interpreting a work , a practice which Burton Watson attributes to " the close links that traditional Chinese thought posits between art and morality " . Since many of Du Fu 's poems feature morality and history , this practice is particularly important . Another reason , identified by the Chinese historian William Hung , is that Chinese poems are typically concise , omitting context that might be relevant , but which an informed contemporary could be assumed to know . For modern Western readers , " The less accurately we know the time , the place and the circumstances in the background , the more liable we are to imagine it incorrectly , and the result will be that we either misunderstand the poem or fail to understand it altogether " . Stephen Owen suggests a third factor particular to Du Fu , arguing that the variety of the poet 's work required consideration of his whole life , rather than the " reductive " categorizations used for more limited poets . = = = Early years = = = Most of what is known of Du Fu 's life comes from his poems . His paternal grandfather was Du Shenyan , a noted politician and poet during the reign of Empress Wu . Du Fu was born in 712 ; the exact birthplace is unknown , except that it was near Luoyang , Henan province ( Gong county is a favourite candidate ) . In later life , he considered himself to belong to the capital city of Chang 'an , ancestral hometown of the Du family . Du Fu 's mother died shortly after he was born , and he was partially raised by his aunt . He had an elder brother , who died young . He also had three half brothers and one half sister , to whom he frequently refers in his poems , although he never mentions his stepmother . The son of a minor scholar @-@ official , his youth was spent on the standard education of a future civil servant : study and memorisation of the Confucian classics of philosophy , history and poetry . He later claimed to have produced creditable poems by his early teens , but these have been lost . In the early 730s , he travelled in the Jiangsu / Zhejiang area ; his earliest surviving poem , describing a poetry contest , is thought to date from the end of this peri
+[prefix-cache] miss: no cached prefix of the 464 tokens | cache: 5 entries, 0.36 GB
+MEM reply 1 first token: footprint=2.973 peak=3.026 avail=1.322 limit~4.295 GB | mlx active=2.788 peak=2.798 cache=0.016 GB | resident=1.548 file-backed=0.022 compressed=0.079 GB | faults=112466 pageins=1739 | thermal=nominal
+MEM reply 1 token 10: footprint=2.974 peak=3.026 avail=1.321 limit~4.295 GB | mlx active=2.788 peak=2.798 cache=0.016 GB | resident=1.549 file-backed=0.023 compressed=0.078 GB | faults=112727 pageins=1915 | thermal=nominal
+MEM reply 1 token 20: footprint=2.973 peak=3.026 avail=1.322 limit~4.295 GB | mlx active=2.788 peak=2.798 cache=0.016 GB | resident=1.550 file-backed=0.023 compressed=0.078 GB | faults=112808 pageins=1923 | thermal=nominal
+REPLY tokens=20 reason=max_new 4.27 tok/s 191.4 MB/token
+UI reply=1 decode_tok_s=4.279 engine_tok_s=4.267 diff=0.29% ttft_ms=113725 (engine 113728) mb_per_token=191.4 (engine 191.4) prefill=cold
+PREFIX reply=1 hit=0 restored_tokens=n/a restore=n/a ms (load n/a ms, state n/a MB; re-land n/a ms, n/a MB read, n/a read / n/a kept / n/a moved) saved=0 save=0 ms (0.0 MB) cache=5 states 356 MB
+PREFILL reply=1 tokens=464 seconds=113.49 read=91575.0 MB records=59963 drive=0.807 GB/s (busy 0.872) blocked_on_reads=108753 ms gpu=51026 ms encode=4694 ms template=8.4 ms first_token=218.9 ms
+SPLIT reply=1 tokens=20 tok/s=4.267 ms/token=234.4 encode=9.7 blocked_on_reads=210.7 (name 1.8 land 208.9) sync_wait=12.6 gpu=105.4 ms gpu_busy=45.0% drive=0.817 GB/s busy=0.889 GB/s (92% of the time) MiB/token=182.6 in_memory=0.8645 sync_reads=0 records/token=125.40 reads_in_flight=7.26
+MEM end of reply 1 (20 tokens, max_new): footprint=2.973 peak=3.026 avail=1.322 limit~4.295 GB | mlx active=2.788 peak=2.798 cache=0.016 GB | resident=1.565 file-backed=0.023 compressed=0.063 GB | faults=113805 pageins=1926 | thermal=nominal
+[prefix-cache] reply end: 489 tokens already cached (n0000489-5eff96eaf2173dbb60f65cdc8abd853932e0de2bc55c8b96754751afd628f111.safetensors)
+SHOWN conversation_title = fe of the author when interpreting a work , a p…
+SHOWN conversation_tokens = 484
+SHOWN memory_dot = good
+SHOWN message_caption_1 = prefilled 464 tokens (cold) · first token 113.7 s · 4.3 tok/s · length limit
+SHOWN prefill = cold
+SHOWN settings_last_reply = 20 tokens, max_new, 4.27 tok/s
+SHOWN settings_live_rate = 4.28
+SHOWN stats_bar_mb = 191 MB/tok
+SHOWN stats_bar_rate = 4.27 tok/s
+SHOWN stats_bar_ttft = TTFT 113.7 s
+SHOWN status_line = 4.3 tok/s · first token 113.7 s
+SHOWN status_line_1 = 4.3 tok/s · first token 113.7 s
+SHOWN thermal_dot = good
+SHOWN tools_1 = off
+PREFIXCACHE on: 5 states, 356 MB in prefix/, LRU cap 1.5 GB
+console: runs/console-20261107-030005.log
+SETTING prefill = token by token
+SETTING prefill read-ahead = off
+[prefix-cache] miss: no cached prefix of the 464 tokens | cache: 5 entries, 0.36 GB
+MEM reply 1 first token: footprint=2.973 peak=3.026 avail=1.322 limit~4.295 GB | mlx active=2.788 peak=2.798 cache=0.016 GB | resident=1.548 file-backed=0.022 compressed=0.079 GB | faults=112466 pageins=1739 | thermal=nominal
+UI reply=1 decode_tok_s=4.279 engine_tok_s=4.267 diff=0.29% ttft_ms=113725 (engine 113728) mb_per_token=191.4 (engine 191.4) prefill=cold
+PREFILL reply=1 tokens=464 seconds=113.49 read=91575.0 MB records=59963 drive=0.807 GB/s (busy 0.872) blocked_on_reads=108753 ms gpu=51026 ms encode=4694 ms template=8.4 ms first_token=218.9 ms

@@ -1,0 +1,6 @@
+# convert.py, make_embeddings.py, tests/check_conversion.py, codec/ (Apple Silicon: mx.quantize writes the int4 records)
+mlx==0.32.3
+torch
+numpy
+safetensors
+huggingface_hub

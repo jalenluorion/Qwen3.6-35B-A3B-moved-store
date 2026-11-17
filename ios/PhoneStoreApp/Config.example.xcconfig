@@ -1,0 +1,10 @@
+// Copy this file to Local.xcconfig (same folder) and fill in both values, or run ../../setup.sh to write it.
+// Local.xcconfig is git-ignored, so your team id never ends up in a commit.
+
+// Your Apple team id: 10 characters. Xcode > Settings > Accounts > your Apple ID > the team, or
+// developer.apple.com > Account > Membership. A free Apple ID has a "Personal Team" with its own id.
+DEVELOPMENT_TEAM =
+
+// A bundle id nobody else has registered. A bundle id belongs to the first team that uses it, so pick your own,
+// e.g. com.yourname.phonestore. Letters, digits, hyphens and dots only.
+BUNDLE_ID = com.example.phonestore

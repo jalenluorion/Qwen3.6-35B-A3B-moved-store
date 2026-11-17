@@ -1,0 +1,34 @@
+label: after: setup, relaunch, background  app: build/Release-iphoneos/PhoneStoreApp.app  args:   old: 0
+installed 12:19:55
+cold1: ready after ~20 s wall (devicectl launch included)
+   LAUNCH fresh process (args: -- -interactive); no earlier process recorded
+   PROBE avail=4.27GB phys=5.94GB disk_free=7.79GB thermal=nominal cap=18 (budget) layer_caps=auto:720 slots=720 layout=slim store=complete (0 problems) codec_layers=40
+   LAUNCH setup needed: no setup record
+   SCENE active: same process, up 0.3 s; engine idle, slabs allocated
+   LOAD loaded in 2.0s
+   LOAD warm-up marker: /var/mobile/Containers/Data/Application/8C141E08-1430-4C16-8ABC-15BE2E9B49D6/Library/Caches/com.example.phonestore/phone-store-kernel-warmup.txt (absent)
+   LOAD warm-up: compiling the batched prefill kernels
+   LOAD warm-up: batched kernels compiled in 1.68 s (dry chunks 128/37/64/27/5/1 = 262 positions + 1 dry decode step 0.08 s on a throwaway state; no reads, store and prefix cache untouched)
+   LOAD ready in 3.9s: prefetch, cap 18, 2.75 GB planned, layout slim
+   SETUP kernels: batched prefill kernels compiled at load in 1.68 s (dry chunks 128/37/64/27/5/1, state discarded)
+   WARM start (one-time setup): system prompt, 193 characters, tools off, not cached: prefill
+   WARM done (one-time setup): prefilled 47 tokens in 11.37 s (prefill 11.06 s, 6353 MB read; landed 0 records in 0.00 s; saved 66.8 MB) -> n0000047-1b46f6d9321eeef11dcfcbf52cd8b110500a374e24be9158735bbbf81e292893.safetensors
+   WARM start (one-time setup): system prompt, 1723 characters, tools on, cached: restore + land
+   WARM done (one-time setup): restored 415 tokens in 0.68 s (prefill 0.00 s, 411 MB read; landed 268 records in 0.63 s) -> n0000415-d8344d07e7106e6dac17c1210640e2d7c0a85d39a8fd0584906e53d66c4d0063.safetensors
+   SETUP done in 16.1 s: marker written (setup.json)
+   LAUNCH ready in 16.06 s (load 3.97 s, then one-time setup 12.09 s): engine ready
+cold2: ready after ~6 s wall (devicectl launch included)
+   LAUNCH fresh process (args: -- -interactive); previous process pid 27530: last scene phase active, 22 s ago
+   PROBE avail=4.27GB phys=5.94GB disk_free=7.71GB thermal=nominal cap=18 (budget) layer_caps=auto:720 slots=720 layout=slim store=complete (0 problems) codec_layers=40
+   LAUNCH setup done: since 2026-11-07T17:20:14Z
+   SCENE active: same process, up 0.3 s; engine idle, slabs allocated
+   LOAD loaded in 1.9s
+   LOAD warm-up marker: /var/mobile/Containers/Data/Application/8C141E08-1430-4C16-8ABC-15BE2E9B49D6/Library/Caches/com.example.phonestore/phone-store-kernel-warmup.txt (matches this install)
+   LOAD warm-up: skipped, this install's batched kernels were compiled at an earlier launch (phone-store-kernel-warmup.txt; -kernelWarmup 1 forces it)
+   LOAD ready in 2.1s: prefetch, cap 18, 2.75 GB planned, layout slim
+   SETUP kernels: skipped: compiled at an earlier launch of this install (the OS shader cache has them)
+   WARM start (launch: restore): system prompt, 1723 characters, tools on, cached: restore + land
+   WARM done (launch: restore): restored 415 tokens in 1.37 s (prefill 0.00 s, 1106 MB read; landed 720 records in 1.32 s) -> n0000415-d8344d07e7106e6dac17c1210640e2d7c0a85d39a8fd0584906e53d66c4d0063.safetensors
+   LAUNCH ready in 3.54 s (load 2.14 s, then system state 1.40 s): engine ready
+background 10 s: pid before 27541, after 10 s 27541, after the return 27541 -> SURVIVED
+background 60 s: pid before , after 60 s none, after the return 27565 -> KILLED

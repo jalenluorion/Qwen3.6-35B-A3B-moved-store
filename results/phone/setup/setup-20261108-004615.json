@@ -1,0 +1,73 @@
+{
+  "cap" : 18,
+  "caps" : [
+    14,
+    13,
+    13,
+    16,
+    16,
+    17,
+    16,
+    19,
+    18,
+    19,
+    17,
+    18,
+    19,
+    19,
+    19,
+    19,
+    19,
+    19,
+    17,
+    20,
+    18,
+    17,
+    19,
+    17,
+    20,
+    19,
+    19,
+    18,
+    17,
+    18,
+    17,
+    18,
+    19,
+    18,
+    20,
+    19,
+    18,
+    20,
+    19,
+    23
+  ],
+  "date" : "2026-11-08T05:46:38Z",
+  "drive" : {
+    "16" : 0.6449264714559106,
+    "32" : 0.5257592097613555,
+    "4" : 0.5939674192269366,
+    "8" : 0.27079819391841925
+  },
+  "estimate" : {
+    "cap" : 18,
+    "driveGBps" : 0.6449264714559106,
+    "memoryGB" : 5.5291900634765625,
+    "tokensPerSec" : 3.2246323572795528,
+    "wordsPerSec" : 2.4184742679596645
+  },
+  "exe" : "37466448@1794116770",
+  "key" : "one-time setup 1 | exe 37466448@1794116770 | store ebff14efbc8c5fad | phone-store native prefix state 1 | caps 14,13,13,16,16,17,16,19,18,19,17,18,19,19,19,19,19,19,17,20,18,17,19,17,20,19,19,18,17,18,17,18,19,18,20,19,18,20,19,23 | prompts d59d1d101e04",
+  "readers" : 16,
+  "seconds" : 17.49183201789856,
+  "states" : [
+    "\/var\/mobile\/Containers\/Data\/Application\/9FDC35D1-895D-42A6-A354-5EFEE782E8EA\/Documents\/prefix\/n0000047-1b46f6d9321eeef11dcfcbf52cd8b110500a374e24be9158735bbbf81e292893.safetensors",
+    "\/var\/mobile\/Containers\/Data\/Application\/9FDC35D1-895D-42A6-A354-5EFEE782E8EA\/Documents\/prefix\/n0000439-31bea393da08aa6df74885fef928fdae39c50b125883757b0f434b38ae100d5c.safetensors"
+  ],
+  "steps" : {
+    "assistant" : "Already prepared",
+    "drive" : "16 readers, 0.64 GB\/s",
+    "kernels" : "Compiled",
+    "tools" : "Already prepared"
+  }
+}

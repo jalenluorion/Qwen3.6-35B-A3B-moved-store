@@ -1,0 +1,40 @@
+DOWNLOAD config manifest=https://huggingface.co/jalenluorion/phone-store-qwen36-35b-a3b/resolve/main/manifest.json only=small,store4/layer_00.bin auto=true fakeFree=- cellular=false background=true modelDir=/var/mobile/Containers/Data/Application/3E31BA35-E8EB-42ED-B188-90FD079BC676/Documents/model_dl
+DOWNLOAD manifest https://huggingface.co/jalenluorion/phone-store-qwen36-35b-a3b/resolve/main/manifest.json: 61 files, required 20597475264 B, version 2026-11-06
+DOWNLOAD plan 9 file(s), 475897841 B (-downloadOnly)
+DOWNLOAD space need=475897841 + headroom 1000000000 <= free 4317780455
+DOWNLOAD start store4/meta.json 639 B <- https://huggingface.co/jalenluorion/phone-store-qwen36-35b-a3b/resolve/main/store4/meta.json
+DOWNLOAD start store4/layer_00.bin 452984832 B <- https://huggingface.co/jalenluorion/phone-store-qwen36-35b-a3b/resolve/main/store4/layer_00.bin
+DOWNLOAD start config.json 3686 B <- https://huggingface.co/jalenluorion/phone-store-qwen36-35b-a3b/resolve/main/config.json
+DOWNLOAD start tokenizer.json 12807982 B <- https://huggingface.co/jalenluorion/phone-store-qwen36-35b-a3b/resolve/main/tokenizer.json
+DOWNLOAD start tokenizer_config.json 16718 B <- https://huggingface.co/jalenluorion/phone-store-qwen36-35b-a3b/resolve/main/tokenizer_config.json
+DOWNLOAD start vocab.json 6722759 B <- https://huggingface.co/jalenluorion/phone-store-qwen36-35b-a3b/resolve/main/vocab.json
+DOWNLOAD start merges.txt 3353259 B <- https://huggingface.co/jalenluorion/phone-store-qwen36-35b-a3b/resolve/main/merges.txt
+DOWNLOAD start chat_template.jinja 7764 B <- https://huggingface.co/jalenluorion/phone-store-qwen36-35b-a3b/resolve/main/chat_template.jinja
+DOWNLOAD start generation_config.json 202 B <- https://huggingface.co/jalenluorion/phone-store-qwen36-35b-a3b/resolve/main/generation_config.json
+DOWNLOAD verified config.json 3686 B sha256 ok (hash 0.00 s, 1 MB/s); transfer 0.0 s, 0.4 MB/s, resumed from 0 B
+DOWNLOAD verified chat_template.jinja 7764 B sha256 ok (hash 0.00 s, 6 MB/s); transfer 0.0 s, 0.9 MB/s, resumed from 0 B
+DOWNLOAD verified generation_config.json 202 B sha256 ok (hash 0.00 s, 0 MB/s); transfer 0.0 s, 0.0 MB/s, resumed from 0 B
+DOWNLOAD verified store4/meta.json 639 B sha256 ok (hash 0.00 s, 0 MB/s); transfer 0.0 s, 0.1 MB/s, resumed from 0 B
+DOWNLOAD progress 0.002 of 0.476 GB (0.4%), 0.0 MB/s, eta -; active: layer_00.bin 0%, tokenizer.json 0%, vocab.json 24%, merges.txt 4%
+DOWNLOAD verified tokenizer_config.json 16718 B sha256 ok (hash 0.00 s, 4 MB/s); transfer 0.1 s, 0.2 MB/s, resumed from 0 B
+DOWNLOAD verified vocab.json 6722759 B sha256 ok (hash 0.01 s, 761 MB/s); transfer 1.0 s, 7.1 MB/s, resumed from 0 B
+DOWNLOAD verified merges.txt 3353259 B sha256 ok (hash 0.01 s, 368 MB/s); transfer 0.7 s, 5.0 MB/s, resumed from 0 B
+DOWNLOAD verified tokenizer.json 12807982 B sha256 ok (hash 0.02 s, 766 MB/s); transfer 4.0 s, 3.2 MB/s, resumed from 0 B
+DOWNLOAD progress 0.048 of 0.476 GB (10.2%), 8.5 MB/s, eta 50 s; active: layer_00.bin 6%
+DOWNLOAD progress 0.091 of 0.476 GB (19.1%), 8.4 MB/s, eta 46 s; active: layer_00.bin 15%
+DOWNLOAD progress 0.151 of 0.476 GB (31.7%), 10.5 MB/s, eta 31 s; active: layer_00.bin 28%
+DOWNLOAD progress 0.213 of 0.476 GB (44.8%), 11.2 MB/s, eta 23 s; active: layer_00.bin 42%
+DOWNLOAD progress 0.282 of 0.476 GB (59.2%), 11.9 MB/s, eta 16 s; active: layer_00.bin 57%
+DOWNLOAD progress 0.348 of 0.476 GB (73.2%), 13.2 MB/s, eta 10 s; active: layer_00.bin 72%
+DOWNLOAD progress 0.417 of 0.476 GB (87.7%), 13.4 MB/s, eta 4 s; active: layer_00.bin 87%
+DOWNLOAD verified store4/layer_00.bin 452984832 B sha256 ok (hash 0.25 s, 1823 MB/s); transfer 41.4 s, 10.9 MB/s, resumed from 0 B
+DOWNLOAD DONE 9 file(s), 475897841 B; 475897841 B over the network this launch in 41.7 s (11.4 MB/s)
+DOWNLOAD store check: incomplete, 42 problem(s)
+DOWNLOAD report /var/mobile/Containers/Data/Application/3E31BA35-E8EB-42ED-B188-90FD079BC676/Documents/download.json
+DONE
+19:59:02  Acquired tunnel connection to device.
+19:59:02  Enabling developer disk image services.
+19:59:02  Acquired usage assertion.
+Launched application with com.example.phonestore bundle identifier.
+Waiting for the application to terminate...
+The app terminated with the exit code 0.

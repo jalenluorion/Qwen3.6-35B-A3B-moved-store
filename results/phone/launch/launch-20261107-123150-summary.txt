@@ -1,0 +1,43 @@
+label: after, -backgroundRelease 0: background 60/300  app: build/Release-iphoneos/PhoneStoreApp.app  args: -backgroundRelease 0  old: 0
+background 60 s: pid before 27755, after 60 s 27755, after the return 27755 -> SURVIVED
+background 300 s: pid before 27780, after 300 s none, after the return 27805 -> KILLED
+   2026-11-07T17:23:50Z +30.47s pid 27567 SCENE active: same process, up 30.5 s; engine ready, slabs released, back after 9.9 s in the background
+   2026-11-07T17:23:52Z +32.95s pid 27567 FOREGROUND slabs allocated again, 720 records re-landed in 2.45 s (2.47 s after the return): footprint 2.942 GB
+   2026-11-07T17:24:14Z +0.00s pid 27654 LAUNCH fresh process (args: -- -interactive); previous process pid 27567: last scene phase active, 24 s ago
+   2026-11-07T17:24:14Z +0.29s pid 27654 LAUNCH setup done: since 2026-11-07T17:20:14Z
+   2026-11-07T17:24:14Z +0.30s pid 27654 SCENE active: same process, up 0.3 s; engine idle, slabs allocated
+   2026-11-07T17:24:18Z +3.95s pid 27654 LAUNCH ready in 3.66 s (load 2.19 s, then system state 1.47 s): engine ready
+   2026-11-07T17:24:32Z +18.63s pid 27654 SCENE inactive: same process, up 18.6 s; engine ready, slabs allocated
+   2026-11-07T17:24:34Z +19.71s pid 27654 SCENE background: same process, up 19.7 s; engine ready, slabs allocated
+   2026-11-07T17:24:34Z +20.33s pid 27654 BACKGROUND released 1.27 GB of slabs in 0.34 s: footprint 2.950 -> 1.665 GB, available 1.345 -> 2.630 GB
+   2026-11-07T17:25:33Z +79.37s pid 27654 SCENE inactive: same process, up 79.4 s; engine ready, slabs released
+   2026-11-07T17:25:34Z +79.83s pid 27654 SCENE active: same process, up 79.8 s; engine ready, slabs released, back after 60.1 s in the background
+   2026-11-07T17:25:36Z +82.23s pid 27654 FOREGROUND slabs allocated again, 720 records re-landed in 2.39 s (2.39 s after the return): footprint 2.942 GB
+   2026-11-07T17:25:58Z +0.00s pid 27664 LAUNCH fresh process (args: -- -interactive); previous process pid 27654: last scene phase active, 24 s ago
+   2026-11-07T17:25:58Z +0.29s pid 27664 LAUNCH setup done: since 2026-11-07T17:20:14Z
+   2026-11-07T17:25:58Z +0.30s pid 27664 SCENE active: same process, up 0.3 s; engine idle, slabs allocated
+   2026-11-07T17:26:02Z +4.00s pid 27664 LAUNCH ready in 3.71 s (load 2.27 s, then system state 1.44 s): engine ready
+   2026-11-07T17:26:16Z +18.56s pid 27664 SCENE inactive: same process, up 18.6 s; engine ready, slabs allocated
+   2026-11-07T17:26:17Z +19.69s pid 27664 SCENE background: same process, up 19.7 s; engine ready, slabs allocated
+   2026-11-07T17:26:18Z +20.21s pid 27664 BACKGROUND released 1.27 GB of slabs in 0.30 s: footprint 2.949 -> 1.665 GB, available 1.346 -> 2.630 GB
+   2026-11-07T17:31:17Z +319.40s pid 27664 SCENE inactive: same process, up 319.4 s; engine ready, slabs released
+   2026-11-07T17:31:17Z +319.78s pid 27664 SCENE active: same process, up 319.8 s; engine ready, slabs released, back after 300.1 s in the background
+   2026-11-07T17:31:20Z +322.37s pid 27664 FOREGROUND slabs allocated again, 720 records re-landed in 2.57 s (2.58 s after the return): footprint 2.943 GB
+   2026-11-07T17:31:54Z +0.00s pid 27755 LAUNCH fresh process (args: -- -interactive -backgroundRelease 0); previous process pid 27664: last scene phase active, 36 s ago
+   2026-11-07T17:31:54Z +0.37s pid 27755 LAUNCH setup done: since 2026-11-07T17:20:14Z
+   2026-11-07T17:31:54Z +0.38s pid 27755 SCENE active: same process, up 0.4 s; engine idle, slabs allocated
+   2026-11-07T17:31:58Z +4.18s pid 27755 LAUNCH ready in 3.81 s (load 2.23 s, then system state 1.58 s): engine ready
+   2026-11-07T17:32:13Z +18.68s pid 27755 SCENE inactive: same process, up 18.7 s; engine ready, slabs allocated
+   2026-11-07T17:32:13Z +19.60s pid 27755 SCENE background: same process, up 19.6 s; engine ready, slabs allocated
+   2026-11-07T17:33:13Z +79.20s pid 27755 SCENE inactive: same process, up 79.2 s; engine ready, slabs allocated
+   2026-11-07T17:33:14Z +79.66s pid 27755 SCENE active: same process, up 79.7 s; engine ready, slabs allocated, back after 60.1 s in the background
+   2026-11-07T17:33:37Z +0.00s pid 27780 LAUNCH fresh process (args: -- -interactive -backgroundRelease 0); previous process pid 27755: last scene phase active, 24 s ago
+   2026-11-07T17:33:38Z +0.28s pid 27780 LAUNCH setup done: since 2026-11-07T17:20:14Z
+   2026-11-07T17:33:38Z +0.30s pid 27780 SCENE active: same process, up 0.3 s; engine loading, slabs allocated
+   2026-11-07T17:33:41Z +3.89s pid 27780 LAUNCH ready in 3.60 s (load 2.16 s, then system state 1.44 s): engine ready
+   2026-11-07T17:33:56Z +18.52s pid 27780 SCENE inactive: same process, up 18.5 s; engine ready, slabs allocated
+   2026-11-07T17:33:57Z +19.47s pid 27780 SCENE background: same process, up 19.5 s; engine ready, slabs allocated
+   2026-11-07T17:38:57Z +0.00s pid 27805 LAUNCH fresh process (args: -- -interactive -backgroundRelease 0); previous process pid 27780: last scene phase background, 300 s ago (it ended in the background: iOS ended it, or it was terminated there)
+   2026-11-07T17:38:58Z +0.43s pid 27805 LAUNCH setup done: since 2026-11-07T17:20:14Z
+   2026-11-07T17:38:58Z +0.44s pid 27805 SCENE active: same process, up 0.4 s; engine idle, slabs allocated
+   2026-11-07T17:39:04Z +6.40s pid 27805 LAUNCH ready in 5.97 s (load 2.81 s, then system state 3.16 s): engine ready

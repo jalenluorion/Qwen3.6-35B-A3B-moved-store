@@ -1,0 +1,57 @@
+2026-11-07T17:19:57Z +0.00s pid 27530 LAUNCH fresh process (args: -- -interactive); no earlier process recorded
+2026-11-07T17:19:58Z +0.28s pid 27530 LAUNCH setup needed: no setup record
+2026-11-07T17:19:58Z +0.30s pid 27530 SCENE active: same process, up 0.3 s; engine idle, slabs allocated
+2026-11-07T17:20:14Z +16.33s pid 27530 SETUP done in 16.1 s: marker written (setup.json)
+2026-11-07T17:20:14Z +16.33s pid 27530 LAUNCH ready in 16.06 s (load 3.97 s, then one-time setup 12.09 s): engine ready
+2026-11-07T17:20:19Z +0.00s pid 27540 LAUNCH fresh process (args: -- -interactive); previous process pid 27530: last scene phase active, 22 s ago
+2026-11-07T17:20:20Z +0.30s pid 27540 LAUNCH setup done: since 2026-11-07T17:20:14Z
+2026-11-07T17:20:20Z +0.31s pid 27540 SCENE active: same process, up 0.3 s; engine idle, slabs allocated
+2026-11-07T17:20:23Z +3.83s pid 27540 LAUNCH ready in 3.54 s (load 2.14 s, then system state 1.40 s): engine ready
+2026-11-07T17:20:28Z +0.00s pid 27541 LAUNCH fresh process (args: -- -interactive); previous process pid 27540: last scene phase active, 9 s ago
+2026-11-07T17:20:29Z +0.27s pid 27541 LAUNCH setup done: since 2026-11-07T17:20:14Z
+2026-11-07T17:20:29Z +0.29s pid 27541 SCENE active: same process, up 0.3 s; engine loading, slabs allocated
+2026-11-07T17:20:32Z +3.77s pid 27541 LAUNCH ready in 3.50 s (load 2.10 s, then system state 1.40 s): engine ready
+2026-11-07T17:20:39Z +10.64s pid 27541 SCENE inactive: same process, up 10.6 s; engine ready, slabs allocated
+2026-11-07T17:20:40Z +11.61s pid 27541 SCENE background: same process, up 11.6 s; engine ready, slabs allocated
+2026-11-07T17:20:40Z +12.20s pid 27541 BACKGROUND released 1.27 GB of slabs in 0.31 s: footprint 2.950 -> 1.665 GB, available 1.345 -> 2.630 GB
+2026-11-07T17:20:50Z +21.39s pid 27541 SCENE inactive: same process, up 21.4 s; engine ready, slabs released
+2026-11-07T17:20:50Z +21.85s pid 27541 SCENE active: same process, up 21.8 s; engine ready, slabs released, back after 10.2 s in the background
+2026-11-07T17:20:52Z +23.97s pid 27541 FOREGROUND slabs allocated again, 720 records re-landed in 2.10 s (2.11 s after the return): footprint 2.943 GB
+2026-11-07T17:22:22Z +0.00s pid 27565 LAUNCH fresh process (args: -- -interactive); previous process pid 27541: last scene phase active, 92 s ago
+2026-11-07T17:22:22Z +0.28s pid 27565 LAUNCH setup done: since 2026-11-07T17:20:14Z
+2026-11-07T17:22:22Z +0.29s pid 27565 SCENE active: same process, up 0.3 s; engine idle, slabs allocated
+2026-11-07T17:22:26Z +4.00s pid 27565 LAUNCH ready in 3.72 s (load 2.22 s, then system state 1.49 s): engine ready
+2026-11-07T17:22:54Z +0.00s pid 27566 LAUNCH fresh process (args: -- -interactive); previous process pid 27565: last scene phase active, 32 s ago
+2026-11-07T17:22:55Z +0.27s pid 27566 LAUNCH setup done: since 2026-11-07T17:20:14Z
+2026-11-07T17:22:55Z +0.28s pid 27566 SCENE active: same process, up 0.3 s; engine loading, slabs allocated
+2026-11-07T17:22:58Z +3.86s pid 27566 LAUNCH ready in 3.59 s (load 2.19 s, then system state 1.40 s): engine ready
+2026-11-07T17:23:19Z +0.00s pid 27567 LAUNCH fresh process (args: -- -interactive); previous process pid 27566: last scene phase active, 25 s ago
+2026-11-07T17:23:20Z +0.26s pid 27567 LAUNCH setup done: since 2026-11-07T17:20:14Z
+2026-11-07T17:23:20Z +0.27s pid 27567 SCENE active: same process, up 0.3 s; engine idle, slabs allocated
+2026-11-07T17:23:23Z +3.88s pid 27567 LAUNCH ready in 3.62 s (load 2.16 s, then system state 1.46 s): engine ready
+2026-11-07T17:23:39Z +19.40s pid 27567 SCENE inactive: same process, up 19.4 s; engine ready, slabs allocated
+2026-11-07T17:23:40Z +20.53s pid 27567 SCENE background: same process, up 20.5 s; engine ready, slabs allocated
+2026-11-07T17:23:41Z +21.22s pid 27567 BACKGROUND released 1.27 GB of slabs in 0.35 s: footprint 2.949 -> 1.666 GB, available 1.346 -> 2.629 GB
+2026-11-07T17:23:49Z +30.01s pid 27567 SCENE inactive: same process, up 30.0 s; engine ready, slabs released
+2026-11-07T17:23:50Z +30.47s pid 27567 SCENE active: same process, up 30.5 s; engine ready, slabs released, back after 9.9 s in the background
+2026-11-07T17:23:52Z +32.95s pid 27567 FOREGROUND slabs allocated again, 720 records re-landed in 2.45 s (2.47 s after the return): footprint 2.942 GB
+2026-11-07T17:24:14Z +0.00s pid 27654 LAUNCH fresh process (args: -- -interactive); previous process pid 27567: last scene phase active, 24 s ago
+2026-11-07T17:24:14Z +0.29s pid 27654 LAUNCH setup done: since 2026-11-07T17:20:14Z
+2026-11-07T17:24:14Z +0.30s pid 27654 SCENE active: same process, up 0.3 s; engine idle, slabs allocated
+2026-11-07T17:24:18Z +3.95s pid 27654 LAUNCH ready in 3.66 s (load 2.19 s, then system state 1.47 s): engine ready
+2026-11-07T17:24:32Z +18.63s pid 27654 SCENE inactive: same process, up 18.6 s; engine ready, slabs allocated
+2026-11-07T17:24:34Z +19.71s pid 27654 SCENE background: same process, up 19.7 s; engine ready, slabs allocated
+2026-11-07T17:24:34Z +20.33s pid 27654 BACKGROUND released 1.27 GB of slabs in 0.34 s: footprint 2.950 -> 1.665 GB, available 1.345 -> 2.630 GB
+2026-11-07T17:25:33Z +79.37s pid 27654 SCENE inactive: same process, up 79.4 s; engine ready, slabs released
+2026-11-07T17:25:34Z +79.83s pid 27654 SCENE active: same process, up 79.8 s; engine ready, slabs released, back after 60.1 s in the background
+2026-11-07T17:25:36Z +82.23s pid 27654 FOREGROUND slabs allocated again, 720 records re-landed in 2.39 s (2.39 s after the return): footprint 2.942 GB
+2026-11-07T17:25:58Z +0.00s pid 27664 LAUNCH fresh process (args: -- -interactive); previous process pid 27654: last scene phase active, 24 s ago
+2026-11-07T17:25:58Z +0.29s pid 27664 LAUNCH setup done: since 2026-11-07T17:20:14Z
+2026-11-07T17:25:58Z +0.30s pid 27664 SCENE active: same process, up 0.3 s; engine idle, slabs allocated
+2026-11-07T17:26:02Z +4.00s pid 27664 LAUNCH ready in 3.71 s (load 2.27 s, then system state 1.44 s): engine ready
+2026-11-07T17:26:16Z +18.56s pid 27664 SCENE inactive: same process, up 18.6 s; engine ready, slabs allocated
+2026-11-07T17:26:17Z +19.69s pid 27664 SCENE background: same process, up 19.7 s; engine ready, slabs allocated
+2026-11-07T17:26:18Z +20.21s pid 27664 BACKGROUND released 1.27 GB of slabs in 0.30 s: footprint 2.949 -> 1.665 GB, available 1.346 -> 2.630 GB
+2026-11-07T17:31:17Z +319.40s pid 27664 SCENE inactive: same process, up 319.4 s; engine ready, slabs released
+2026-11-07T17:31:17Z +319.78s pid 27664 SCENE active: same process, up 319.8 s; engine ready, slabs released, back after 300.1 s in the background
+2026-11-07T17:31:20Z +322.37s pid 27664 FOREGROUND slabs allocated again, 720 records re-landed in 2.57 s (2.58 s after the return): footprint 2.943 GB

@@ -1,0 +1,15 @@
+# your signing values (written by setup.sh)
+ios/PhoneStoreApp/Local.xcconfig
+# build products
+ios/PhoneStoreApp/build/
+native/.build/
+native/.xcbuild/
+native/.swiftpm/
+native/cache/
+xcuserdata/
+DerivedData/
+# the model, when downloaded into the checkout
+model/
+codec/out/
+__pycache__/
+.DS_Store

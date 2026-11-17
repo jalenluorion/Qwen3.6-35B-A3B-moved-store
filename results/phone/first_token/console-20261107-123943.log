@@ -1,0 +1,94 @@
+LAUNCH fresh process (args: -- -autotest -tools 0 -thinking 0 -greedy -prefillChunk 128 -noPromptEndSave -system You are a helpful assistant running); previous process pid 27805: last scene phase active, 46 s ago
+ENGINE PhoneStore (native: -autotest always runs the native engine) mode=prefetch
+DIAG memWarn=log chatOnce=How does a phone keep its battery from overheating while charging? Answer in two sentences. historyMode=live mappedWeightsInUse=0 maxNew=40 mode=prefetch prefillChunk=128 prefixCache=on system=You are a helpful assistant running entirely on this iPhone. Replies stream at about three words per second, so be concise: lead with the answer, use short paragraphs or lists, and skip filler.
+MEM launch: footprint=0.009 peak=0.009 avail=4.286 limit~4.295 GB | mlx active=n/a peak=n/a cache=n/a GB | resident=0.031 file-backed=0.022 compressed=0.000 GB | faults=3095 pageins=725 | thermal=nominal
+PROBE avail=4.27GB phys=5.94GB disk_free=7.64GB thermal=nominal cap=18 (budget) layer_caps=auto:720 slots=720 layout=slim store=complete (0 problems) codec_layers=40
+LOAD tokenizer + chat template from model/
+SCENE active: same process, up 0.3 s; engine loading, slabs allocated
+LOAD kernels: mlx.metallib (-fno-fast-math): /var/containers/Bundle/Application/6454DCCC-ED16-4B99-8272-2C766FE4B8B6/PhoneStoreApp.app/mlx.metallib
+LOAD weights loaded: resident 1.10 GB + routers 0.33 GB; phys_footprint 0.174 -> 1.617 GB (+1.443), resident pages +1.324 GB (file-backed +0.001)
+LOAD loaded in 2.2s
+LOAD warm-up marker: /var/mobile/Containers/Data/Application/8DD919AD-BE78-4E25-BC8F-87C409CE1606/Library/Caches/com.example.phonestore/phone-store-kernel-warmup.txt (another key: kernel warm-up 2 (+ decode step true) | /private/var/containers/Bundle/Application/85BE6D69-7C42-43A3-8A6E-90F49A6C2EA9/PhoneStoreApp.app | exe 36787024@1794069747.0 | metallib 2049332@1794069743.0 | chunk 128)
+LOAD warm-up: compiling the batched prefill kernels
+LOAD warm-up: batched kernels compiled in 1.75 s (dry chunks 128/37/64/27/5/1 = 262 positions + 1 dry decode step 0.08 s on a throwaway state; no reads, store and prefix cache untouched)
+LOAD ready in 4.3s: prefetch, cap 18, 2.75 GB planned, layout slim
+LOAD layout slim: embeddings /var/mobile/Containers/Data/Application/8DD919AD-BE78-4E25-BC8F-87C409CE1606/Documents/model/embeddings.safetensors; resident /var/mobile/Containers/Data/Application/8DD919AD-BE78-4E25-BC8F-87C409CE1606/Documents/model/cache/resident_q4.safetensors; routers /var/mobile/Containers/Data/Application/8DD919AD-BE78-4E25-BC8F-87C409CE1606/Documents/model/cache/routers_k4_r8.safetensors
+LOAD ready: native runtime (mlx-swift 0.32.3, MLX core 0.32.3); prefetch, int8 lag-4 routers, cap 18 (auto:720, 720 slots); layout slim; codec: 40 layers .psc; kernels: mlx.metallib (-fno-fast-math): /var/containers/Bundle/Application/6454DCCC-ED16-4B99-8272-2C766FE4B8B6/PhoneStoreApp.app/mlx.metallib
+SETTING mode = prefetch
+SETTING layout = slim
+SETTING embeddings = bf16 rows read per token from /var/mobile/Containers/Data/Application/8DD919AD-BE78-4E25-BC8F-87C409CE1606/Documents/model/embeddings.safetensors
+SETTING routers = lag-4, 8 named, int8 matrices (/var/mobile/Containers/Data/Application/8DD919AD-BE78-4E25-BC8F-87C409CE1606/Documents/model/cache/routers_k4_r8.safetensors)
+SETTING keep = 31
+SETTING evict = hazard
+SETTING drop = no drop
+SETTING resident = int4, 1.10 GB (/var/mobile/Containers/Data/Application/8DD919AD-BE78-4E25-BC8F-87C409CE1606/Documents/model/cache/resident_q4.safetensors)
+SETTING cap (slots / layer) = per layer (auto:720), mean 18
+SETTING slots per layer = 14 13 13 16 16 17 16 19 18 19 17 18 19 19 19 19 19 19 17 20 18 17 19 17 20 19 19 18 17 18 17 18 19 18 20 19 18 20 19 23
+SETTING slabs = 720 slots (sum over layers) x 1.77 MB = 1.27 GB
+SETTING memory plan = 2.75 GB (resident 1.10 + routers 0.33 + slabs 1.27 + codec staging 0.04)
+SETTING store codec = auto: 40 layers compressed (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39), 0 raw; staging 24 x 1.65 MB
+SETTING readers = 8, 4 chunks / record
+SETTING page cache = F_NOCACHE + no readahead
+SETTING read overlap = late wait on, head start on
+SETTING sampling = greedy (launch argument -autotest)
+SETTING prefill = batched, chunks of 128 positions, 8 readers in a chunk
+SETTING prefill read-ahead = lag-4 names of later layers, up to the cap records per layer into empty slots, low priority (h_prev shift)
+SETTING prefix re-land = lazy: the next chunk reads what it uses or keeps
+SETTING kernel warm-up = batched prefill kernels compiled at load in 1.75 s (dry chunks 128/37/64/27/5/1, state discarded)
+SETTING MLX cache limit = 64 MB, wired limit on
+SETTING kernels = mlx.metallib (-fno-fast-math): /var/containers/Bundle/Application/6454DCCC-ED16-4B99-8272-2C766FE4B8B6/PhoneStoreApp.app/mlx.metallib
+SETTING MLX core = 0.32.3
+SETTING native cache = /var/mobile/Containers/Data/Application/8DD919AD-BE78-4E25-BC8F-87C409CE1606/Documents/model/cache
+SETTING model dir = /var/mobile/Containers/Data/Application/8DD919AD-BE78-4E25-BC8F-87C409CE1606/Documents/model
+SETTING thinking budget = none
+SETTING history = live: thinking-off turns keep their empty think block; thinking turns cached at the assistant header
+SETTING prefix cache = on: 8 states, 573 MB in prefix/, LRU cap 1.5 GB
+MEM after load: footprint=3.001 peak=3.094 avail=1.294 limit~4.295 GB | mlx active=2.712 peak=2.817 cache=0.068 GB | resident=1.504 file-backed=0.023 compressed=0.159 GB | faults=108167 pageins=2511 | thermal=nominal
+PREFIXCACHE stale warm-up end states deleted: 0 | tails 14 tokens / 12 tokens / 10 tokens
+CHATONCE How does a phone keep its battery from overheating while charging? Answer in two sentences.
+WARM start: system prompt, 193 characters, tools off
+[prefix-cache] hit: 47 of 56 tokens from n0000047-1b46f6d9321eeef11dcfcbf52cd8b110500a374e24be9158735bbbf81e292893.safetensors | state 66.8 MB loaded in 0.050 s | re-landed 0 records (0.0 MB) in 0.000 s, 0 kept in place, 0 moved, 720 deferred to the prompt's chunk, 720 held
+WARM done in 3.60 s: restored prefix, 9 tokens prefilled, 47 restored, 0 states saved, prefill 1759 MB / 1150 records, re-land 0 read / 0 kept / 720 deferred (prompt 56 tokens; end state not saved)
+INDICATOR reply=1 dots shown alone; no prefill card
+[prefix-cache] hit: 47 of 74 tokens from n0000047-1b46f6d9321eeef11dcfcbf52cd8b110500a374e24be9158735bbbf81e292893.safetensors | state 66.8 MB loaded in 0.014 s | re-landed 0 records (0.0 MB) in 0.000 s, 29 kept in place, 0 moved, 691 deferred to the prompt's chunk, 720 held
+PROGRESS reply=1 restored prefix done=0/27 reused=47 read=0.0 MB reland=0.0 MB prefill=0.00 s elapsed=0.02 s
+PROGRESS reply=1 restored prefix done=10/27 reused=47 read=1444.7 MB reland=0.0 MB prefill=2.42 s elapsed=2.44 s
+PROGRESS reply=1 restored prefix done=20/27 reused=47 read=2606.3 MB reland=0.0 MB prefill=4.46 s elapsed=4.47 s
+PROGRESS reply=1 restored prefix done=27/27 reused=47 read=3639.9 MB reland=0.0 MB prefill=6.38 s elapsed=6.40 s
+INDICATOR reply=1 first token at 6.8 s: dots replaced by the streamed text
+MEM reply 1 first token: footprint=3.012 peak=3.094 avail=1.283 limit~4.295 GB | mlx active=2.782 peak=2.817 cache=0.055 GB | resident=1.619 file-backed=0.027 compressed=0.086 GB | faults=121976 pageins=4053 | thermal=nominal
+MEM reply 1 token 10: footprint=3.018 peak=3.094 avail=1.277 limit~4.295 GB | mlx active=2.783 peak=2.817 cache=0.060 GB | resident=1.618 file-backed=0.028 compressed=0.089 GB | faults=122350 pageins=4170 | thermal=nominal
+MEM reply 1 token 20: footprint=3.019 peak=3.094 avail=1.276 limit~4.295 GB | mlx active=2.783 peak=2.817 cache=0.060 GB | resident=1.606 file-backed=0.025 compressed=0.100 GB | faults=122572 pageins=4203 | thermal=nominal
+MEM reply 1 token 30: footprint=3.023 peak=3.094 avail=1.272 limit~4.295 GB | mlx active=2.782 peak=2.817 cache=0.063 GB | resident=1.608 file-backed=0.025 compressed=0.099 GB | faults=122827 pageins=4206 | thermal=nominal
+PROGRESS check reply=1: last event 27/27 tokens, 3639.9 MB, 6.38 s; engine prefilled 27 tokens (restored prefix), 3639.9 MB, 6.39 s; tokens equal, kind equal
+TEXT reply=1 "The phone’s power management IC monitors temperature and adjusts charging current dynamically. If it gets too hot, the system slows down or pauses charging to prevent damage."
+CAPTION reply=1 restored 47 tokens · prefilled 27 · first token 6.8 s · 3.8 tok/s (first reply of this launch in it)
+REPLY tokens=31 reason=eos 3.80 tok/s 197.0 MB/token
+UI reply=1 decode_tok_s=3.812 engine_tok_s=3.805 diff=0.20% ttft_ms=6777 (engine 6777) mb_per_token=197.0 (engine 197.0) prefill=restored prefix
+PREFIX reply=1 hit=1 restored_tokens=47 restore=16 ms (load 14 ms, state 66.8 MB; re-land 0 ms, 0.0 MB read, 0 read / 29 kept / 0 moved) saved=0 save=0 ms (0.0 MB) cache=8 states 573 MB
+PREFILL reply=1 tokens=27 seconds=6.39 read=3639.9 MB records=2386 drive=0.570 GB/s (busy 0.775) blocked_on_reads=5358 ms gpu=1738 ms encode=85 ms template=0.8 ms first_token=369.4 ms
+SPLIT reply=1 tokens=31 tok/s=3.805 ms/token=262.8 encode=10.7 blocked_on_reads=237.3 (name 1.9 land 235.4) sync_wait=14.3 gpu=109.9 ms gpu_busy=41.8% drive=0.750 GB/s busy=0.815 GB/s (92% of the time) MiB/token=187.9 in_memory=0.8745 sync_reads=0 records/token=129.06 reads_in_flight=7.25
+MEM end of reply 1 (31 tokens, eos): footprint=3.023 peak=3.094 avail=1.272 limit~4.295 GB | mlx active=2.782 peak=2.817 cache=0.063 GB | resident=1.622 file-backed=0.024 compressed=0.084 GB | faults=123792 pageins=4210 | thermal=nominal
+SHOWN conversation_title = How does a phone keep its battery from overheat…
+SHOWN conversation_tokens = 105
+SHOWN memory_dot = good
+SHOWN message_caption_1 = restored 47 tokens · prefilled 27 · first token 6.8 s · 3.8 tok/s
+SHOWN prefill = restored prefix
+SHOWN settings_last_reply = 31 tokens, eos, 3.80 tok/s
+SHOWN settings_live_rate = 3.81
+SHOWN stats_bar_mb = 197 MB/tok
+SHOWN stats_bar_rate = 3.80 tok/s
+SHOWN stats_bar_ttft = TTFT 6.8 s
+SHOWN status_line = 3.8 tok/s · first token 6.8 s
+SHOWN status_line_1 = 3.8 tok/s · first token 6.8 s
+SHOWN thermal_dot = good
+SHOWN tools_1 = off
+CONVERSATION saved /var/mobile/Containers/Data/Application/8DD919AD-BE78-4E25-BC8F-87C409CE1606/Documents/conversations/396BA04A-9F9B-44CE-ABFF-A61622EEE321.json
+[prefix-cache] reply end: fed 5 end tokens in 2.185 s, saved 110 tokens -> n0000110-feef1344816b782ee6ba5a16ae010176f1272e2485f51a71b7165fef683f26a1.safetensors (68.1 MB, 0.196 s) | cache: 9 entries, 0.64 GB | 2.392 s in all
+PREFIXCACHE on: 9 states, 641 MB in prefix/, LRU cap 1.5 GB
+DONE
+12:39:43  Enabling developer disk image services.
+12:39:43  Acquired usage assertion.
+Launched application with com.example.phonestore bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 15.

@@ -1,0 +1,23 @@
+Clean-clone build of this repository, 2026-11-17
+
+Machine: Apple M4 MacBook Pro, 16 GB, macOS 26.5.1 (25F80), Xcode 26.3 (17C529), iOS SDK 26.2.
+Steps: git clone; BUNDLE_ID=<a test id> ./setup.sh (team found in Xcode's accounts, written to the git-ignored
+ios/PhoneStoreApp/Local.xcconfig); then
+
+  xcodebuild -project PhoneStoreApp.xcodeproj -target PhoneStoreApp -configuration Release -sdk iphoneos \
+    -clonedSourcePackagesDirPath <empty folder> -skipPackagePluginValidation -skipMacroValidation \
+    CODE_SIGNING_ALLOWED=NO build
+
+Signing: the resolved settings (xcodebuild -showBuildSettings) were DEVELOPMENT_TEAM = the team from Local.xcconfig
+and PRODUCT_BUNDLE_IDENTIFIER = the test id; the compile itself ran unsigned (CODE_SIGNING_ALLOWED=NO), so no app id or
+provisioning profile was registered for the test id.
+Packages: fetched fresh from GitHub into an empty folder (swift-transformers 1.4.0, swift-jinja 3.0.0,
+swift-huggingface 1.0.0, swift-collections 1.7.5, swift-crypto 4.5.2, swift-asn1 1.7.4, swift-numerics 1.1.1,
+EventSource 1.6.0, yyjson 0.13.0); mlx-swift is vendored (native/vendor/mlx-swift).
+Result: BUILD SUCCEEDED in 166 s wall clock, package fetch included. PhoneStoreApp.app 46 MB, mlx.metallib 2,049,332 B
+(MinimumOSVersion 26.0). Build folders about 1 GB.
+Mac CLI (native/build.sh) in the same clone: BUILD SUCCEEDED in 136 s, mlx.metallib (macosx) 2,050,868 B.
+
+Not possible on this Mac: the Xcode GUI's Run on a device. Destination resolution fails here with
+"iOS 26.2 is not installed. Please download and install the platform from Xcode > Settings > Components",
+which is why the build above names -sdk iphoneos instead of a destination.

@@ -1,0 +1,138 @@
+** BUILD SUCCEEDED **
+=== 512-token input, chunk 128 02:49:53
+02:49:53  Acquired tunnel connection to device.
+02:49:53  Enabling developer disk image services.
+02:49:53  Acquired usage assertion.
+App installed:
+? bundleID: com.example.phonestore
+? installationURL: file:///private/var/containers/Bundle/Application/F9F7A3E4-5413-46EC-B9C6-F20350720027/PhoneStoreApp.app/
+? launchServicesIdentifier: unknown
+? databaseUUID: E966648E-9F55-417B-9841-F2E76FA47A63
+? databaseSequenceNumber: 3820
+? options: 
+pulled runs/probe-20261107-024955.json
+pulled runs/autotest-20261107-024955.json
+pulled runs/mem-20261107-024955.jsonl
+pulled runs/ui-20261107-024955.json
+ENGINE PhoneStore (native: -autotest always runs the native engine) mode=prefetch
+DIAG memWarn=log chatOnce== Robert Boulter = Robert Boulter is an English film , television and theatre actor . He had a guest @-@ starring role on the television series The Bill in 2000 . This was followed by a starring role in the play Herons written by Simon Stephens , which was performed in 2001 at the Royal Court Theatre . He had a guest role in the television series Judge John Deed in 2002 . In 2004 Boulter landed a role as " Craig " in the episode " Teddy 's Story " of the television series The Long Firm ; he starred alongside actors Mark Strong and Derek Jacobi . He was cast in the 2005 theatre productions of the Philip Ridley play Mercury Fur , which was performed at the Drum Theatre in Plymouth and the Menier Chocolate Factory in London . He was directed by John Tiffany and starred alongside Ben Whishaw , Shane Zaza , Harry Kent , Fraser Ayres , Sophie Stanton and Dominic Hall . In 2006 , Boulter starred alongside Whishaw in the play Citizenship written by Mark Ravenhill . He appeared on a 2006 episode of the television series , Doctors , followed by a role in the 2007 theatre production of How to Curse directed by Josie Rourke . How to Curse was performed at Bush Theatre in the London Borough of Hammersmith and Fulham . Boulter starred in two films in 2008 , Daylight Robbery by filmmaker Paris Leonti , and Donkey Punch directed by Olly Blackburn . In May 2008 , Boulter made a guest appearance on a two @-@ part episode arc of the television series Waking the Dead , followed by an appearance on the television series Survivors in November 2008 . He had a recurring role in ten episodes of the television series Casualty in 2010 , as " Kieron Fletcher " . Boulter starred in the 2011 film Mercenaries directed by Paris Leonti . = = Career = = = = = 2000 – 2005 = = = In 2000 Boulter had a guest @-@ starring role on the television series The Bill ; he portrayed " Scott Parry " in the episode , " In Safe Hands " . Boulter starred as " Scott " in the play Herons written by Simon Stephens , which was performed in 2001 at the Royal Court Theatre . A review of Boulter 's performance in The Independent on Sunday described him as " horribly menacing " in the role , and he received critical r historyMode=live mappedWeightsInUse=0 maxNew=20 mode=prefetch prefillChunk=128 prefixCache=on
+MEM launch: footprint=0.009 peak=0.009 avail=4.286 limit~4.295 GB | mlx active=n/a peak=n/a cache=n/a GB | resident=0.030 file-backed=0.022 compressed=0.000 GB | faults=3244 pageins=917 | thermal=nominal
+PROBE avail=4.27GB phys=5.94GB disk_free=8.35GB thermal=nominal cap=18 (budget) layer_caps=auto:720 slots=720 layout=slim store=complete (0 problems) codec_layers=40
+LOAD tokenizer + chat template from model/
+LOAD kernels: mlx.metallib (-fno-fast-math): /var/containers/Bundle/Application/F9F7A3E4-5413-46EC-B9C6-F20350720027/PhoneStoreApp.app/mlx.metallib
+LOAD weights loaded: resident 1.10 GB + routers 0.33 GB; phys_footprint 0.175 -> 1.599 GB (+1.424), resident pages +1.378 GB (file-backed +-0.014)
+LOAD loaded in 2.0s
+LOAD warm-up: compiling the batched prefill kernels
+LOAD warm-up: batched kernels compiled in 1.65 s (dry chunks 128/37/64/27/5/1 = 262 positions + 1 dry decode step 0.08 s on a throwaway state; no reads, store and prefix cache untouched)
+LOAD ready in 3.9s: prefetch, cap 18, 2.75 GB planned, layout slim
+LOAD layout slim: embeddings /var/mobile/Containers/Data/Application/83730F43-B3F6-4F19-80CB-8A9921E5A0AC/Documents/model/embeddings.safetensors; resident /var/mobile/Containers/Data/Application/83730F43-B3F6-4F19-80CB-8A9921E5A0AC/Documents/model/cache/resident_q4.safetensors; routers /var/mobile/Containers/Data/Application/83730F43-B3F6-4F19-80CB-8A9921E5A0AC/Documents/model/cache/routers_k4_r8.safetensors
+LOAD ready: native runtime (mlx-swift 0.32.3, MLX core 0.32.3); prefetch, int8 lag-4 routers, cap 18 (auto:720, 720 slots); layout slim; codec: 40 layers .psc; kernels: mlx.metallib (-fno-fast-math): /var/containers/Bundle/Application/F9F7A3E4-5413-46EC-B9C6-F20350720027/PhoneStoreApp.app/mlx.metallib
+MEM after load: footprint=2.956 peak=3.040 avail=1.339 limit~4.295 GB | mlx active=2.712 peak=2.819 cache=0.068 GB | resident=1.590 file-backed=0.037 compressed=0.034 GB | faults=106576 pageins=2221 | thermal=nominal
+PREFIXCACHE stale warm-up end states deleted: 0 | tails 14 tokens / 12 tokens / 10 tokens
+CHATONCE = Robert Boulter = Robert Boulter is an English film , television and theatre actor . He had a guest @-@ starring role on the television series The Bill in 2000 . This was followed by a starring role in the play Herons written by Simon Stephens , which was performed in 2001 at the Royal Court Theatre . He had a guest role in the television series Judge John Deed in 2002 . In 2004 Boulter landed a role as " Craig " in the episode " Teddy 's Story " of the television series The Long Firm ; he starred alongside actors Mark Strong and Derek Jacobi . He was cast in the 2005 theatre productions of the Philip Ridley play Mercury Fur , which was performed at the Drum Theatre in Plymouth and the Menier Chocolate Factory in London . He was directed by John Tiffany and starred alongside Ben Whishaw , Shane Zaza , Harry Kent , Fraser Ayres , Sophie Stanton and Dominic Hall . In 2006 , Boulter starred alongside Whishaw in the play Citizenship written by Mark Ravenhill . He appeared on a 2006 episode of the television series , Doctors , followed by a role in the 2007 theatre production of How to Curse directed by Josie Rourke . How to Curse was performed at Bush Theatre in the London Borough of Hammersmith and Fulham . Boulter starred in two films in 2008 , Daylight Robbery by filmmaker Paris Leonti , and Donkey Punch directed by Olly Blackburn . In May 2008 , Boulter made a guest appearance on a two @-@ part episode arc of the television series Waking the Dead , followed by an appearance on the television series Survivors in November 2008 . He had a recurring role in ten episodes of the television series Casualty in 2010 , as " Kieron Fletcher " . Boulter starred in the 2011 film Mercenaries directed by Paris Leonti . = = Career = = = = = 2000 – 2005 = = = In 2000 Boulter had a guest @-@ starring role on the television series The Bill ; he portrayed " Scott Parry " in the episode , " In Safe Hands " . Boulter starred as " Scott " in the play Herons written by Simon Stephens , which was performed in 2001 at the Royal Court Theatre . A review of Boulter 's performance in The Independent on Sunday described him as " horribly menacing " in the role , and he received critical r
+[prefix-cache] miss: no cached prefix of the 554 tokens | cache: 3 entries, 0.20 GB
+[prefix-cache] saved 554 tokens -> n0000554-c025b09c4260a5e4a74f1daf424ddd4d52ee94b63978d24a1b9513dc1ca1e0ae.safetensors (77.1 MB, 0.194 s) | cache: 4 entries, 0.28 GB
+MEM reply 1 first token: footprint=3.056 peak=3.077 avail=1.239 limit~4.295 GB | mlx active=2.793 peak=2.837 cache=0.066 GB | resident=1.638 file-backed=0.025 compressed=0.099 GB | faults=119348 pageins=2995 | thermal=nominal
+MEM reply 1 token 10: footprint=3.057 peak=3.077 avail=1.238 limit~4.295 GB | mlx active=2.793 peak=2.837 cache=0.066 GB | resident=1.641 file-backed=0.026 compressed=0.098 GB | faults=119760 pageins=3229 | thermal=nominal
+MEM reply 1 token 20: footprint=3.058 peak=3.077 avail=1.237 limit~4.295 GB | mlx active=2.793 peak=2.837 cache=0.066 GB | resident=1.643 file-backed=0.026 compressed=0.097 GB | faults=119928 pageins=3244 | thermal=nominal
+REPLY tokens=20 reason=max_new 3.76 tok/s 210.8 MB/token
+UI reply=1 decode_tok_s=3.768 engine_tok_s=3.757 diff=0.30% ttft_ms=67036 (engine 67038) mb_per_token=210.8 (engine 210.8) prefill=cold
+PREFIX reply=1 hit=0 restored_tokens=n/a restore=n/a ms (load n/a ms, state n/a MB; re-land n/a ms, n/a MB read, n/a read / n/a kept / n/a moved) saved=1 save=194 ms (77.1 MB) cache=4 states 280 MB
+PREFILL reply=1 tokens=554 seconds=66.48 read=34328.3 MB records=22434 drive=0.516 GB/s (busy 0.854) blocked_on_reads=42248 ms gpu=22157 ms encode=1093 ms template=4.4 ms first_token=354.0 ms
+SPLIT reply=1 tokens=20 tok/s=3.757 ms/token=266.2 encode=10.7 blocked_on_reads=239.4 (name 1.9 land 237.5) sync_wait=14.8 gpu=118.1 ms gpu_busy=44.4% drive=0.792 GB/s busy=0.863 GB/s (92% of the time) MiB/token=201.0 in_memory=0.8572 sync_reads=0 records/token=138.00 reads_in_flight=7.28
+MEM end of reply 1 (20 tokens, max_new): footprint=3.058 peak=3.077 avail=1.237 limit~4.295 GB | mlx active=2.793 peak=2.837 cache=0.066 GB | resident=1.647 file-backed=0.026 compressed=0.093 GB | faults=120181 pageins=3252 | thermal=nominal
+[prefix-cache] reply end: not saved (the next prompt does not render the reply's 20 tokens as generated)
+SHOWN conversation_title = = Robert Boulter = Robert Boulter is an English…
+SHOWN conversation_tokens = 574
+SHOWN memory_dot = good
+SHOWN message_caption_1 = prefilled 554 tokens (cold) · first token 67.0 s · 3.8 tok/s · length limit
+SHOWN prefill = cold
+SHOWN settings_last_reply = 20 tokens, max_new, 3.76 tok/s
+SHOWN settings_live_rate = 3.77
+SHOWN stats_bar_mb = 211 MB/tok
+SHOWN stats_bar_rate = 3.76 tok/s
+SHOWN stats_bar_ttft = TTFT 67.0 s
+SHOWN status_line = 3.8 tok/s · first token 67.0 s
+SHOWN status_line_1 = 3.8 tok/s · first token 67.0 s
+SHOWN thermal_dot = good
+SHOWN tools_1 = off
+PREFIXCACHE on: 4 states, 280 MB in prefix/, LRU cap 1.5 GB
+console: runs/console-20261107-024955.log
+console runs/console-20261107-024955.log
+PROBE avail=4.27GB phys=5.94GB disk_free=8.35GB thermal=nominal cap=18 (budget) layer_caps=auto:720 slots=720 layout=slim store=complete (0 problems) codec_layers=40
+LOAD warm-up: compiling the batched prefill kernels
+LOAD warm-up: batched kernels compiled in 1.65 s (dry chunks 128/37/64/27/5/1 = 262 positions + 1 dry decode step 0.08 s on a throwaway state; no reads, store and prefix cache untouched)
+SETTING readers = 8, 4 chunks / record
+SETTING prefill = batched, chunks of 128 positions, 8 readers in a chunk
+SETTING prefix re-land = lazy: the next chunk reads what it uses or keeps
+SETTING kernel warm-up = batched prefill kernels compiled at load in 1.65 s (dry chunks 128/37/64/27/5/1, state discarded)
+MEM reply 1 first token: footprint=3.056 peak=3.077 avail=1.239 limit~4.295 GB | mlx active=2.793 peak=2.837 cache=0.066 GB | resident=1.638 file-backed=0.025 compressed=0.099 GB | faults=119348 pageins=2995 | thermal=nominal
+REPLY tokens=20 reason=max_new 3.76 tok/s 210.8 MB/token
+UI reply=1 decode_tok_s=3.768 engine_tok_s=3.757 diff=0.30% ttft_ms=67036 (engine 67038) mb_per_token=210.8 (engine 210.8) prefill=cold
+PREFILL reply=1 tokens=554 seconds=66.48 read=34328.3 MB records=22434 drive=0.516 GB/s (busy 0.854) blocked_on_reads=42248 ms gpu=22157 ms encode=1093 ms template=4.4 ms first_token=354.0 ms
+=== 512-token input, auto chunk 02:53:15
+02:53:15  Acquired tunnel connection to device.
+02:53:15  Enabling developer disk image services.
+02:53:15  Acquired usage assertion.
+App installed:
+? bundleID: com.example.phonestore
+? installationURL: file:///private/var/containers/Bundle/Application/60B4543F-0903-4CDA-A82B-AA6C38A97EA7/PhoneStoreApp.app/
+? launchServicesIdentifier: unknown
+? databaseUUID: E966648E-9F55-417B-9841-F2E76FA47A63
+? databaseSequenceNumber: 3828
+? options: 
+pulled runs/probe-20261107-025316.json
+pulled runs/autotest-20261107-025316.json
+pulled runs/mem-20261107-025316.jsonl
+pulled runs/ui-20261107-025316.json
+ENGINE PhoneStore (native: -autotest always runs the native engine) mode=prefetch
+DIAG memWarn=log chatOnce== Robert Boulter = Robert Boulter is an English film , television and theatre actor . He had a guest @-@ starring role on the television series The Bill in 2000 . This was followed by a starring role in the play Herons written by Simon Stephens , which was performed in 2001 at the Royal Court Theatre . He had a guest role in the television series Judge John Deed in 2002 . In 2004 Boulter landed a role as " Craig " in the episode " Teddy 's Story " of the television series The Long Firm ; he starred alongside actors Mark Strong and Derek Jacobi . He was cast in the 2005 theatre productions of the Philip Ridley play Mercury Fur , which was performed at the Drum Theatre in Plymouth and the Menier Chocolate Factory in London . He was directed by John Tiffany and starred alongside Ben Whishaw , Shane Zaza , Harry Kent , Fraser Ayres , Sophie Stanton and Dominic Hall . In 2006 , Boulter starred alongside Whishaw in the play Citizenship written by Mark Ravenhill . He appeared on a 2006 episode of the television series , Doctors , followed by a role in the 2007 theatre production of How to Curse directed by Josie Rourke . How to Curse was performed at Bush Theatre in the London Borough of Hammersmith and Fulham . Boulter starred in two films in 2008 , Daylight Robbery by filmmaker Paris Leonti , and Donkey Punch directed by Olly Blackburn . In May 2008 , Boulter made a guest appearance on a two @-@ part episode arc of the television series Waking the Dead , followed by an appearance on the television series Survivors in November 2008 . He had a recurring role in ten episodes of the television series Casualty in 2010 , as " Kieron Fletcher " . Boulter starred in the 2011 film Mercenaries directed by Paris Leonti . = = Career = = = = = 2000 – 2005 = = = In 2000 Boulter had a guest @-@ starring role on the television series The Bill ; he portrayed " Scott Parry " in the episode , " In Safe Hands " . Boulter starred as " Scott " in the play Herons written by Simon Stephens , which was performed in 2001 at the Royal Court Theatre . A review of Boulter 's performance in The Independent on Sunday described him as " horribly menacing " in the role , and he received critical r historyMode=live mappedWeightsInUse=0 maxNew=20 mode=prefetch prefixCache=on
+MEM launch: footprint=0.009 peak=0.009 avail=4.286 limit~4.295 GB | mlx active=n/a peak=n/a cache=n/a GB | resident=0.030 file-backed=0.022 compressed=0.000 GB | faults=3788 pageins=1000 | thermal=nominal
+PROBE avail=4.27GB phys=5.94GB disk_free=8.23GB thermal=nominal cap=18 (budget) layer_caps=auto:720 slots=720 layout=slim store=complete (0 problems) codec_layers=40
+LOAD tokenizer + chat template from model/
+LOAD kernels: mlx.metallib (-fno-fast-math): /var/containers/Bundle/Application/60B4543F-0903-4CDA-A82B-AA6C38A97EA7/PhoneStoreApp.app/mlx.metallib
+LOAD weights loaded: resident 1.10 GB + routers 0.33 GB; phys_footprint 0.175 -> 1.616 GB (+1.441), resident pages +1.331 GB (file-backed +0.001)
+LOAD loaded in 2.0s
+LOAD ready in 2.3s: prefetch, cap 18, 2.75 GB planned, layout slim
+LOAD layout slim: embeddings /var/mobile/Containers/Data/Application/4E77109A-0298-42A7-86EE-7015C106E387/Documents/model/embeddings.safetensors; resident /var/mobile/Containers/Data/Application/4E77109A-0298-42A7-86EE-7015C106E387/Documents/model/cache/resident_q4.safetensors; routers /var/mobile/Containers/Data/Application/4E77109A-0298-42A7-86EE-7015C106E387/Documents/model/cache/routers_k4_r8.safetensors
+LOAD ready: native runtime (mlx-swift 0.32.3, MLX core 0.32.3); prefetch, int8 lag-4 routers, cap 18 (auto:720, 720 slots); layout slim; codec: 40 layers .psc; kernels: mlx.metallib (-fno-fast-math): /var/containers/Bundle/Application/60B4543F-0903-4CDA-A82B-AA6C38A97EA7/PhoneStoreApp.app/mlx.metallib
+MEM after load: footprint=2.897 peak=2.897 avail=1.398 limit~4.295 GB | mlx active=2.712 peak=2.712 cache=0.000 GB | resident=1.541 file-backed=0.041 compressed=0.119 GB | faults=105886 pageins=2542 | thermal=nominal
+PREFIXCACHE stale warm-up end states deleted: 0 | tails 14 tokens / 12 tokens / 10 tokens
+CHATONCE = Robert Boulter = Robert Boulter is an English film , television and theatre actor . He had a guest @-@ starring role on the television series The Bill in 2000 . This was followed by a starring role in the play Herons written by Simon Stephens , which was performed in 2001 at the Royal Court Theatre . He had a guest role in the television series Judge John Deed in 2002 . In 2004 Boulter landed a role as " Craig " in the episode " Teddy 's Story " of the television series The Long Firm ; he starred alongside actors Mark Strong and Derek Jacobi . He was cast in the 2005 theatre productions of the Philip Ridley play Mercury Fur , which was performed at the Drum Theatre in Plymouth and the Menier Chocolate Factory in London . He was directed by John Tiffany and starred alongside Ben Whishaw , Shane Zaza , Harry Kent , Fraser Ayres , Sophie Stanton and Dominic Hall . In 2006 , Boulter starred alongside Whishaw in the play Citizenship written by Mark Ravenhill . He appeared on a 2006 episode of the television series , Doctors , followed by a role in the 2007 theatre production of How to Curse directed by Josie Rourke . How to Curse was performed at Bush Theatre in the London Borough of Hammersmith and Fulham . Boulter starred in two films in 2008 , Daylight Robbery by filmmaker Paris Leonti , and Donkey Punch directed by Olly Blackburn . In May 2008 , Boulter made a guest appearance on a two @-@ part episode arc of the television series Waking the Dead , followed by an appearance on the television series Survivors in November 2008 . He had a recurring role in ten episodes of the television series Casualty in 2010 , as " Kieron Fletcher " . Boulter starred in the 2011 film Mercenaries directed by Paris Leonti . = = Career = = = = = 2000 – 2005 = = = In 2000 Boulter had a guest @-@ starring role on the television series The Bill ; he portrayed " Scott Parry " in the episode , " In Safe Hands " . Boulter starred as " Scott " in the play Herons written by Simon Stephens , which was performed in 2001 at the Royal Court Theatre . A review of Boulter 's performance in The Independent on Sunday described him as " horribly menacing " in the role , and he received critical r
+[prefix-cache] hit: 554 of 554 tokens from n0000554-c025b09c4260a5e4a74f1daf424ddd4d52ee94b63978d24a1b9513dc1ca1e0ae.safetensors | state 77.1 MB loaded in 0.080 s | re-landed 720 records (1106.0 MB) in 1.355 s, 0 kept in place, 0 moved, 0 deferred to the prompt's chunk, 720 held (lazy restore landed at once: nothing to prefill)
+MEM reply 1 first token: footprint=3.023 peak=3.037 avail=1.272 limit~4.295 GB | mlx active=2.793 peak=2.808 cache=0.023 GB | resident=1.680 file-backed=0.041 compressed=0.075 GB | faults=116166 pageins=3561 | thermal=nominal
+MEM reply 1 token 10: footprint=2.981 peak=3.037 avail=1.314 limit~4.295 GB | mlx active=2.793 peak=2.808 cache=0.023 GB | resident=1.650 file-backed=0.037 compressed=0.063 GB | faults=116520 pageins=3717 | thermal=nominal
+MEM reply 1 token 20: footprint=2.983 peak=3.037 avail=1.312 limit~4.295 GB | mlx active=2.793 peak=2.808 cache=0.026 GB | resident=1.650 file-backed=0.035 compressed=0.062 GB | faults=116710 pageins=3720 | thermal=nominal
+REPLY tokens=20 reason=max_new 3.59 tok/s 210.8 MB/token
+UI reply=1 decode_tok_s=3.602 engine_tok_s=3.592 diff=0.29% ttft_ms=1811 (engine 1810) mb_per_token=210.8 (engine 210.8) prefill=restored prefix
+PREFIX reply=1 hit=1 restored_tokens=554 restore=1437 ms (load 80 ms, state 77.1 MB; re-land 1355 ms, 1106.0 MB read, 720 read / 0 kept / 0 moved) saved=0 save=0 ms (0.0 MB) cache=4 states 280 MB
+PREFILL reply=1 tokens=0 seconds=0.00 read=0.0 MB records=0 drive=0.000 GB/s (busy 0.000) blocked_on_reads=0 ms gpu=0 ms encode=0 ms template=6.2 ms first_token=364.8 ms
+SPLIT reply=1 tokens=20 tok/s=3.592 ms/token=278.4 encode=15.2 blocked_on_reads=247.1 (name 1.9 land 245.2) sync_wait=15.0 gpu=119.8 ms gpu_busy=43.0% drive=0.757 GB/s busy=0.826 GB/s (92% of the time) MiB/token=201.0 in_memory=0.8572 sync_reads=0 records/token=138.00 reads_in_flight=7.28
+MEM end of reply 1 (20 tokens, max_new): footprint=2.983 peak=3.037 avail=1.312 limit~4.295 GB | mlx active=2.793 peak=2.808 cache=0.026 GB | resident=1.656 file-backed=0.035 compressed=0.056 GB | faults=117117 pageins=3720 | thermal=nominal
+[prefix-cache] reply end: not saved (the next prompt does not render the reply's 20 tokens as generated)
+SHOWN conversation_title = = Robert Boulter = Robert Boulter is an English…
+SHOWN conversation_tokens = 574
+SHOWN memory_dot = good
+SHOWN message_caption_1 = restored 554 tokens · prefilled 0 · first token 1.8 s · 3.6 tok/s · length limit
+SHOWN prefill = restored prefix
+SHOWN settings_last_reply = 20 tokens, max_new, 3.59 tok/s
+SHOWN settings_live_rate = 3.60
+SHOWN stats_bar_mb = 211 MB/tok
+SHOWN stats_bar_rate = 3.59 tok/s
+SHOWN stats_bar_ttft = TTFT 1.8 s
+SHOWN status_line = 3.6 tok/s · first token 1.8 s
+SHOWN status_line_1 = 3.6 tok/s · first token 1.8 s
+SHOWN thermal_dot = good
+SHOWN tools_1 = off
+PREFIXCACHE on: 4 states, 280 MB in prefix/, LRU cap 1.5 GB
+console: runs/console-20261107-025316.log
+console runs/console-20261107-025316.log
+PROBE avail=4.27GB phys=5.94GB disk_free=8.23GB thermal=nominal cap=18 (budget) layer_caps=auto:720 slots=720 layout=slim store=complete (0 problems) codec_layers=40
+SETTING readers = 8, 4 chunks / record
+SETTING prefix re-land = lazy: the next chunk reads what it uses or keeps
+[prefix-cache] hit: 554 of 554 tokens from n0000554-c025b09c4260a5e4a74f1daf424ddd4d52ee94b63978d24a1b9513dc1ca1e0ae.safetensors | state 77.1 MB loaded in 0.080 s | re-landed 720 records (1106.0 MB) in 1.355 s, 0 kept in place, 0 
+MEM reply 1 first token: footprint=3.023 peak=3.037 avail=1.272 limit~4.295 GB | mlx active=2.793 peak=2.808 cache=0.023 GB | resident=1.680 file-backed=0.041 compressed=0.075 GB | faults=116166 pageins=3561 | thermal=nominal
+REPLY tokens=20 reason=max_new 3.59 tok/s 210.8 MB/token
+UI reply=1 decode_tok_s=3.602 engine_tok_s=3.592 diff=0.29% ttft_ms=1811 (engine 1810) mb_per_token=210.8 (engine 210.8) prefill=restored prefix
+PREFILL reply=1 tokens=0 seconds=0.00 read=0.0 MB records=0 drive=0.000 GB/s (busy 0.000) blocked_on_reads=0 ms gpu=0 ms encode=0 ms template=6.2 ms first_token=364.8 ms
+=== done 02:55:29

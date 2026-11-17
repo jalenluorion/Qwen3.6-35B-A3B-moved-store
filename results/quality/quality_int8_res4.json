@@ -1,0 +1,1 @@
+{"role": "eval", "flags": "--dir qwen35 --max-slots 32 --keep 7 --store store --resident-bits 4", "ref_flags": "--dir qwen35 --max-slots 32 --keep 7 --store store", "tokens": 300, "next_token_agreement": 0.9433, "nll_ref": 0.1236, "nll_eval": 0.1492, "nll_gap": 0.0256, "s": 92.3}

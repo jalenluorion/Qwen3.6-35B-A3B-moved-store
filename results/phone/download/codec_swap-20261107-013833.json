@@ -1,0 +1,336 @@
+{
+  "codec_layers" : [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "free_bytes" : 8291194047,
+  "headroom_bytes" : 400000000,
+  "held_by_open_model_bytes" : 0,
+  "layers" : [
+    {
+      "bytes" : 319967672,
+      "layer" : 0,
+      "note" : "",
+      "seconds" : 8.1992429494857788,
+      "state" : "done"
+    },
+    {
+      "bytes" : 394111416,
+      "layer" : 1,
+      "note" : "",
+      "seconds" : 9.1167110204696655,
+      "state" : "done"
+    },
+    {
+      "bytes" : 394327528,
+      "layer" : 2,
+      "note" : "",
+      "seconds" : 8.1311169862747192,
+      "state" : "done"
+    },
+    {
+      "bytes" : 394192744,
+      "layer" : 3,
+      "note" : "",
+      "seconds" : 8.5203690528869629,
+      "state" : "done"
+    },
+    {
+      "bytes" : 394063672,
+      "layer" : 4,
+      "note" : "",
+      "seconds" : 11.177225947380066,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393909320,
+      "layer" : 5,
+      "note" : "",
+      "seconds" : 9.0070329904556274,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393857656,
+      "layer" : 6,
+      "note" : "",
+      "seconds" : 9.2749979496002197,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393924776,
+      "layer" : 7,
+      "note" : "",
+      "seconds" : 10.136108040809631,
+      "state" : "done"
+    },
+    {
+      "bytes" : 394011256,
+      "layer" : 8,
+      "note" : "",
+      "seconds" : 9.588110089302063,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393817416,
+      "layer" : 9,
+      "note" : "",
+      "seconds" : 9.9230060577392578,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393620056,
+      "layer" : 10,
+      "note" : "",
+      "seconds" : 12.857733964920044,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393762984,
+      "layer" : 11,
+      "note" : "",
+      "seconds" : 10.325154066085815,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393659992,
+      "layer" : 12,
+      "note" : "",
+      "seconds" : 11.29182505607605,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393736824,
+      "layer" : 13,
+      "note" : "",
+      "seconds" : 11.417966961860657,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393741736,
+      "layer" : 14,
+      "note" : "",
+      "seconds" : 13.294618964195251,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393694104,
+      "layer" : 15,
+      "note" : "",
+      "seconds" : 9.6198610067367554,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393520440,
+      "layer" : 16,
+      "note" : "",
+      "seconds" : 8.5521960258483887,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393498824,
+      "layer" : 17,
+      "note" : "",
+      "seconds" : 7.990338921546936,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393558696,
+      "layer" : 18,
+      "note" : "",
+      "seconds" : 10.615109086036682,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393580584,
+      "layer" : 19,
+      "note" : "",
+      "seconds" : 8.9253900051116943,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393876328,
+      "layer" : 20,
+      "note" : "",
+      "seconds" : 10.201967000961304,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393610168,
+      "layer" : 21,
+      "note" : "",
+      "seconds" : 9.7047929763793945,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393403928,
+      "layer" : 22,
+      "note" : "",
+      "seconds" : 12.721731066703796,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393546456,
+      "layer" : 23,
+      "note" : "",
+      "seconds" : 9.9553070068359375,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393505752,
+      "layer" : 24,
+      "note" : "",
+      "seconds" : 12.239796996116638,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393502280,
+      "layer" : 25,
+      "note" : "",
+      "seconds" : 11.296579003334045,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393634808,
+      "layer" : 26,
+      "note" : "",
+      "seconds" : 9.6782889366149902,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393615224,
+      "layer" : 27,
+      "note" : "",
+      "seconds" : 11.46130895614624,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393580056,
+      "layer" : 28,
+      "note" : "",
+      "seconds" : 9.726438045501709,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393533384,
+      "layer" : 29,
+      "note" : "",
+      "seconds" : 11.96570098400116,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393611768,
+      "layer" : 30,
+      "note" : "",
+      "seconds" : 10.224772930145264,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393602552,
+      "layer" : 31,
+      "note" : "",
+      "seconds" : 10.009827971458435,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393068584,
+      "layer" : 32,
+      "note" : "",
+      "seconds" : 17.157773971557617,
+      "state" : "done"
+    },
+    {
+      "bytes" : 392907096,
+      "layer" : 33,
+      "note" : "",
+      "seconds" : 10.165534973144531,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393090872,
+      "layer" : 34,
+      "note" : "",
+      "seconds" : 10.307555913925171,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393642536,
+      "layer" : 35,
+      "note" : "",
+      "seconds" : 10.577484011650085,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393559464,
+      "layer" : 36,
+      "note" : "",
+      "seconds" : 9.3469529151916504,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393629784,
+      "layer" : 37,
+      "note" : "",
+      "seconds" : 12.678927063941956,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393446072,
+      "layer" : 38,
+      "note" : "",
+      "seconds" : 20.637349963188171,
+      "state" : "done"
+    },
+    {
+      "bytes" : 393608616,
+      "layer" : 39,
+      "note" : "",
+      "seconds" : 10.793823957443237,
+      "state" : "done"
+    }
+  ],
+  "model_dir" : "\/var\/mobile\/Containers\/Data\/Application\/34F49241-EA34-45C7-B07E-28880634EE8A\/Documents\/model",
+  "network_bytes_this_launch" : 15672533424,
+  "phase" : "complete",
+  "seconds" : 429.67762899398804,
+  "store_checks" : 120,
+  "target" : "codec",
+  "time" : "2026-11-07T06:45:44Z"
+}

@@ -1,0 +1,21 @@
+label: before d84047f  app: build/before-d84047f/Release-iphoneos/PhoneStoreApp.app  args:   old: 1
+installed 12:09:18
+cold1: ready after ~34 s wall (devicectl launch included)
+   PROBE avail=4.27GB phys=5.94GB disk_free=7.71GB thermal=nominal cap=18 (budget) layer_caps=auto:720 slots=720 layout=slim store=complete (0 problems) codec_layers=40
+   LOAD loaded in 2.5s
+   LOAD warm-up: compiling the batched prefill kernels
+   LOAD warm-up: batched kernels compiled in 1.78 s (dry chunks 128/37/64/27/5/1 = 262 positions + 1 dry decode step 0.09 s on a throwaway state; no reads, store and prefix cache untouched)
+   LOAD ready in 4.5s: prefetch, cap 18, 2.75 GB planned, layout slim
+   WARM start: system prompt, 1723 characters, tools on
+   WARM done in 27.19 s: cold, 424 tokens prefilled, 0 restored, 1 states saved, prefill 14588 MB / 9515 records, re-land 0 read / 0 kept / 0 deferred (prompt 424 tokens; end state not saved)
+cold2: ready after ~10 s wall (devicectl launch included)
+   PROBE avail=4.27GB phys=5.94GB disk_free=7.67GB thermal=nominal cap=18 (budget) layer_caps=auto:720 slots=720 layout=slim store=complete (0 problems) codec_layers=40
+   LOAD loaded in 2.0s
+   LOAD warm-up: compiling the batched prefill kernels
+   LOAD warm-up: batched kernels compiled in 2.24 s (dry chunks 128/37/64/27/5/1 = 262 positions + 1 dry decode step 0.10 s on a throwaway state; no reads, store and prefix cache untouched)
+   LOAD ready in 4.5s: prefetch, cap 18, 2.75 GB planned, layout slim
+   WARM start: system prompt, 1723 characters, tools on
+   WARM done in 3.27 s: restored prefix, 9 tokens prefilled, 415 restored, 0 states saved, prefill 1719 MB / 1124 records, re-land 0 read / 0 kept / 720 deferred (prompt 424 tokens; end state not saved)
+background 10 s: pid before 27396, after 10 s 27396, after the return 27396 -> SURVIVED
+background 60 s: pid before , after 60 s none, after the return 27428 -> KILLED
+background 300 s: pid before , after 300 s none, after the return 27451 -> KILLED

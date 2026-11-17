@@ -1,0 +1,10 @@
+12:19:46  Acquired tunnel connection to device.
+12:19:46  Enabling developer disk image services.
+12:19:46  Acquired usage assertion.
+App installed:
+? bundleID: com.example.phonestore
+? installationURL: file:///private/var/containers/Bundle/Application/85BE6D69-7C42-43A3-8A6E-90F49A6C2EA9/PhoneStoreApp.app/
+? launchServicesIdentifier: unknown
+? databaseUUID: E966648E-9F55-417B-9841-F2E76FA47A63
+? databaseSequenceNumber: 3912
+? options: 

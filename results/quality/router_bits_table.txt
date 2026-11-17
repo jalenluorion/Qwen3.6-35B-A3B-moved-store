@@ -1,0 +1,19 @@
+| bits | router bytes in memory | text | router recall | released top-8 in memory | MB/token | NLL gap vs exact (nats) | top-1 agree with exact | KL(exact||cfg) top-64 |
+|---|---|---|---|---|---|---|---|---|
+| 8 | 334 MB | wiki | 78.53% | 89.95% | 111.0 | -0.0087 | 95.6% | 0.0153 |
+| 8 | 334 MB | code | 74.06% | 89.34% | 121.9 | +0.0133 | 89.8% | 0.0353 |
+| 8 | 334 MB | chat | 75.69% | 89.12% | 129.6 | +0.0175 | 95.7% | 0.0202 |
+| 4 | 177 MB | wiki | 78.14% | 89.78% | 110.9 | -0.0045 | 95.4% | 0.0120 |
+| 4 | 177 MB | code | 73.68% | 89.17% | 122.4 | +0.0053 | 90.0% | 0.0381 |
+| 4 | 177 MB | chat | 75.37% | 89.00% | 130.1 | +0.0162 | 96.3% | 0.0237 |
+
+| text | scored tokens | NLL exact | gap int8 | gap int4 | int4 - int8 (paired s.e.) | recall int4 - int8 (points) | exact MB/token |
+|---|---|---|---|---|---|---|---|
+| wiki | 999 | 1.5777 | -0.0087 | -0.0045 | +0.0042 (0.0043) | -0.40 | 122.0 |
+| code | 999 | 2.8545 | +0.0133 | +0.0053 | -0.0080 (0.0061) | -0.38 | 122.5 |
+| chat | 300 | 0.2214 | +0.0175 | +0.0162 | -0.0013 (0.0054) | -0.33 | 136.9 |
+
+KL(exact||int4) - KL(exact||int8) per text: wiki -0.0033 (0.0015), code +0.0028 (0.0010), chat +0.0035 (0.0023)
+pooled over the 2298 scored tokens: NLL int4 - int8 -0.0018 (s.e. 0.0033); KL int4 - int8 +0.00023 (s.e. 0.00083)
+
+decision rule (int4 - int8 <= +0.002 nats and recall drop <= 0.5 points on every text): REJECT

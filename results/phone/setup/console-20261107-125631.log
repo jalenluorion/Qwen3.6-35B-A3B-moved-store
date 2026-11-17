@@ -1,0 +1,60 @@
+LAUNCH fresh process (args: -- -interactive); previous process pid 28063: last scene phase launching, 290 s ago
+ENGINE PhoneStore (native: store complete in model/) mode=prefetch
+DIAG memWarn=log historyMode=live mappedWeightsInUse=0 mode=prefetch prefixCache=on
+MEM launch: footprint=0.009 peak=0.009 avail=4.286 limit~4.295 GB | mlx active=n/a peak=n/a cache=n/a GB | resident=0.031 file-backed=0.022 compressed=0.000 GB | faults=3405 pageins=904 | thermal=fair
+PROBE avail=4.27GB phys=5.94GB disk_free=7.89GB thermal=fair cap=18 (budget) layer_caps=auto:720 slots=720 layout=slim store=complete (0 problems) codec_layers=40
+LAUNCH setup needed: key changed (was one-time setup 1 | exe 36787024@1794073521 | store ebff14efbc8c5fad | phone-store native prefix state 1 | caps 14,13,13,16,16,17,16,19,18,19,17,18,19,19,19,19,19,19,17,20,18,17,19,17,20,19,19,18,17,18,17,18,19,18,20,19,18,20,19,23 | prompts d59d1d101e04, now one-time setup 1 | exe 36819344@1794074182 | store ebff14efbc8c5fad | phone-store native prefix state 1 | caps 14,13,13,16,16,17,16,19,18,19,17,18,19,19,19,19,19,19,17,20,18,17,19,17,20,19,19,18,17,18,17,18,19,18,20,19,18,20,19,23 | prompts d59d1d101e04)
+LOAD tokenizer + chat template from model/
+LOAD kernels: mlx.metallib (-fno-fast-math): /var/containers/Bundle/Application/25B6AA88-7D8C-4ED5-9046-89A26761D4DE/PhoneStoreApp.app/mlx.metallib
+LOAD weights loaded: resident 1.10 GB + routers 0.33 GB; phys_footprint 0.176 -> 1.585 GB (+1.409), resident pages +1.293 GB (file-backed +0.001)
+LOAD loaded in 2.0s
+LOAD warm-up marker: /var/mobile/Containers/Data/Application/E2BD63EB-9FB6-40A5-A184-31621D972D81/Library/Caches/com.example.phonestore/phone-store-kernel-warmup.txt (another key: kernel warm-up 2 (+ decode step true) | /private/var/containers/Bundle/Application/FD8E34F2-70DB-426F-AC97-B82AC96D4338/PhoneStoreApp.app | exe 36787024@1794073521.0 | metallib 2049332@1794073517.0 | chunk 128)
+LOAD warm-up: compiling the batched prefill kernels
+LOAD warm-up: batched kernels compiled in 1.94 s (dry chunks 128/37/64/27/5/1 = 262 positions + 1 dry decode step 0.09 s on a throwaway state; no reads, store and prefix cache untouched)
+LOAD ready in 4.2s: prefetch, cap 18, 2.75 GB planned, layout slim
+LOAD layout slim: embeddings /var/mobile/Containers/Data/Application/E2BD63EB-9FB6-40A5-A184-31621D972D81/Documents/model/embeddings.safetensors; resident /var/mobile/Containers/Data/Application/E2BD63EB-9FB6-40A5-A184-31621D972D81/Documents/model/cache/resident_q4.safetensors; routers /var/mobile/Containers/Data/Application/E2BD63EB-9FB6-40A5-A184-31621D972D81/Documents/model/cache/routers_k4_r8.safetensors
+LOAD ready: native runtime (mlx-swift 0.32.3, MLX core 0.32.3); prefetch, int8 lag-4 routers, cap 18 (auto:720, 720 slots); layout slim; codec: 40 layers .psc; kernels: mlx.metallib (-fno-fast-math): /var/containers/Bundle/Application/25B6AA88-7D8C-4ED5-9046-89A26761D4DE/PhoneStoreApp.app/mlx.metallib
+SETTING mode = prefetch
+SETTING layout = slim
+SETTING embeddings = bf16 rows read per token from /var/mobile/Containers/Data/Application/E2BD63EB-9FB6-40A5-A184-31621D972D81/Documents/model/embeddings.safetensors
+SETTING routers = lag-4, 8 named, int8 matrices (/var/mobile/Containers/Data/Application/E2BD63EB-9FB6-40A5-A184-31621D972D81/Documents/model/cache/routers_k4_r8.safetensors)
+SETTING keep = 31
+SETTING evict = hazard
+SETTING drop = no drop
+SETTING resident = int4, 1.10 GB (/var/mobile/Containers/Data/Application/E2BD63EB-9FB6-40A5-A184-31621D972D81/Documents/model/cache/resident_q4.safetensors)
+SETTING cap (slots / layer) = per layer (auto:720), mean 18
+SETTING slots per layer = 14 13 13 16 16 17 16 19 18 19 17 18 19 19 19 19 19 19 17 20 18 17 19 17 20 19 19 18 17 18 17 18 19 18 20 19 18 20 19 23
+SETTING slabs = 720 slots (sum over layers) x 1.77 MB = 1.27 GB
+SETTING memory plan = 2.75 GB (resident 1.10 + routers 0.33 + slabs 1.27 + codec staging 0.04)
+SETTING store codec = auto: 40 layers compressed (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39), 0 raw; staging 24 x 1.65 MB
+SETTING readers = 8, 4 chunks / record
+SETTING page cache = F_NOCACHE + no readahead
+SETTING read overlap = late wait on, head start on
+SETTING sampling = temperature 1, top_k 20, top_p 0.95, min_p 0, seed random per reply
+SETTING prefill = batched, chunks of auto: the largest whose activations fit 285 MB (up to 1003 positions on an empty context, 521 after 4096 tokens), 32 readers in a chunk
+SETTING prefill read-ahead = lag-4 names of later layers, up to the cap records per layer into empty slots, low priority (h_prev shift)
+SETTING prefix re-land = lazy: the next chunk reads what it uses or keeps
+SETTING kernel warm-up = batched prefill kernels compiled at load in 1.94 s (dry chunks 128/37/64/27/5/1, state discarded)
+SETTING MLX cache limit = 64 MB, wired limit on
+SETTING kernels = mlx.metallib (-fno-fast-math): /var/containers/Bundle/Application/25B6AA88-7D8C-4ED5-9046-89A26761D4DE/PhoneStoreApp.app/mlx.metallib
+SETTING MLX core = 0.32.3
+SETTING native cache = /var/mobile/Containers/Data/Application/E2BD63EB-9FB6-40A5-A184-31621D972D81/Documents/model/cache
+SETTING model dir = /var/mobile/Containers/Data/Application/E2BD63EB-9FB6-40A5-A184-31621D972D81/Documents/model
+SETTING thinking budget = none
+SETTING history = live: thinking-off turns keep their empty think block; thinking turns cached at the assistant header
+SETTING prefix cache = on: 5 states, 347 MB in prefix/, LRU cap 1.5 GB
+MEM after load: footprint=2.936 peak=3.025 avail=1.359 limit~4.295 GB | mlx active=2.712 peak=2.819 cache=0.068 GB | resident=1.535 file-backed=0.036 compressed=0.075 GB | faults=108767 pageins=1958 | thermal=fair
+PREFIXCACHE stale warm-up end states deleted: 0 | tails 14 tokens / 12 tokens / 10 tokens
+SETUP kernels: batched prefill kernels compiled at load in 1.94 s (dry chunks 128/37/64/27/5/1, state discarded)
+SETUP drive: 4: 0.728 GB/s, 8: 0.784 GB/s, 16: 0.788 GB/s, 32: 0.766 GB/s -> 8 readers (8.3 s; 32 reader threads)
+WARM start (one-time setup): system prompt, 193 characters, tools off, cached: restore
+WARM done (one-time setup): restored 47 tokens in 1.08 s (prefill 0.00 s, 0 MB read; landed 0 records in 0.00 s) -> n0000047-1b46f6d9321eeef11dcfcbf52cd8b110500a374e24be9158735bbbf81e292893.safetensors
+WARM start (one-time setup): system prompt, 1723 characters, tools on, cached: restore + land
+WARM done (one-time setup): restored 415 tokens in 1.33 s (prefill 0.00 s, 1031 MB read; landed 671 records in 1.25 s) -> n0000415-d8344d07e7106e6dac17c1210640e2d7c0a85d39a8fd0584906e53d66c4d0063.safetensors
+SETUP done in 15.0 s: marker written (setup.json)
+LAUNCH ready in 14.98 s (load 4.21 s, then one-time setup 10.77 s): engine ready
+12:56:31  Enabling developer disk image services.
+12:56:31  Acquired usage assertion.
+Launched application with com.example.phonestore bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 15.

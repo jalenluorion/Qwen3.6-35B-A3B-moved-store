@@ -1,0 +1,166 @@
+=== prefixTest budget cap
+16:47:28  Acquired tunnel connection to device.
+16:47:28  Enabling developer disk image services.
+16:47:28  Acquired usage assertion.
+App installed:
+? bundleID: com.example.phonestore
+? installationURL: file:///private/var/containers/Bundle/Application/5195C397-0148-4D22-BF75-7C7333096F93/PhoneStoreApp.app/
+? launchServicesIdentifier: unknown
+? databaseUUID: E966648E-9F55-417B-9841-F2E76FA47A63
+? databaseSequenceNumber: 2952
+? options: 
+pulled runs/probe-20261104-164733.json
+pulled runs/autotest-20261104-164733.json
+pulled runs/mem-20261104-164733.jsonl
+ENGINE PhoneStore (native: -autotest always runs the native engine) mode=prefetch
+DIAG memWarn=log maxNew=40 mode=prefetch prefixCache=on prefixTest=1
+MEM launch: footprint=0.007 peak=0.007 avail=4.288 limit~4.295 GB | mlx active=n/a peak=n/a cache=n/a GB | resident=0.025 compressed=0.000 GB | thermal=nominal
+PROBE avail=4.28GB phys=5.94GB disk_free=4.85GB thermal=nominal cap=19 (budget) layer_caps=auto:760 slots=760 layout=slim store=complete (0 problems) codec_layers=0
+LOAD tokenizer + chat template from model/
+LOAD kernels: mlx.metallib (-fno-fast-math): /var/containers/Bundle/Application/5195C397-0148-4D22-BF75-7C7333096F93/PhoneStoreApp.app/mlx.metallib
+LOAD loaded in 2.5s
+LOAD ready in 2.8s: prefetch, cap 19, 2.78 GB planned, layout slim
+LOAD layout slim: embeddings /var/mobile/Containers/Data/Application/7B95977F-8456-49AA-AD4C-C016F01F5A55/Documents/model/embeddings.safetensors; resident /var/mobile/Containers/Data/Application/7B95977F-8456-49AA-AD4C-C016F01F5A55/Documents/model/cache/resident_q4.safetensors; routers /var/mobile/Containers/Data/Application/7B95977F-8456-49AA-AD4C-C016F01F5A55/Documents/model/cache/routers_k4_r8.safetensors
+LOAD ready: native runtime (mlx-swift 0.32.3, MLX core 0.32.3); prefetch, int8 lag-4 routers, cap 19 (auto:760, 760 slots); layout slim; codec: 0 layers .psc; kernels: mlx.metallib (-fno-fast-math): /var/containers/Bundle/Application/5195C397-0148-4D22-BF75-7C7333096F93/PhoneStoreApp.app/mlx.metallib
+MEM after load: footprint=2.925 peak=2.941 avail=1.370 limit~4.295 GB | mlx active=2.783 peak=2.783 cache=0.000 GB | resident=1.468 compressed=0.122 GB | thermal=nominal
+PREFIXTEST start
+MEM memory warning #1 (idle): footprint=2.904 peak=2.941 avail=1.391 limit~4.295 GB | mlx active=2.783 peak=2.783 cache=0.000 GB | resident=1.470 compressed=0.101 GB | thermal=nominal
+EVENT memory warning (idle; footprint 2.904 GB, available 1.391 GB, MLX active 2.783 GB); not stopped (-memWarn log)
+PREFIXTEST prefix cache emptied
+[prefix-cache] miss: no cached prefix of the 41 tokens | cache: 0 entries, 0.00 GB
+[prefix-cache] saved 41 tokens -> n0000041-9945eee9eebd0970ac068d294e797476f5b4d04d230f33efd277999c85dfbb47.safetensors (66.6 MB, 0.700 s) | cache: 1 entries, 0.07 GB
+MEM reply 1 first token: footprint=2.974 peak=2.979 avail=1.321 limit~4.295 GB | mlx active=2.854 peak=2.861 cache=0.008 GB | resident=2.876 compressed=0.090 GB | thermal=nominal
+MEM reply 1 token 10: footprint=2.971 peak=2.979 avail=1.324 limit~4.295 GB | mlx active=2.853 peak=2.861 cache=0.008 GB | resident=2.889 compressed=0.081 GB | thermal=nominal
+MEM reply 1 token 20: footprint=2.972 peak=2.979 avail=1.323 limit~4.295 GB | mlx active=2.853 peak=2.861 cache=0.008 GB | resident=2.890 compressed=0.081 GB | thermal=nominal
+MEM reply 1 token 30: footprint=2.971 peak=2.979 avail=1.324 limit~4.295 GB | mlx active=2.854 peak=2.861 cache=0.008 GB | resident=2.887 compressed=0.081 GB | thermal=nominal
+MEM reply 1 token 40: footprint=2.973 peak=2.979 avail=1.322 limit~4.295 GB | mlx active=2.854 peak=2.861 cache=0.007 GB | resident=2.889 compressed=0.081 GB | thermal=nominal
+REPLY tokens=40 reason=max_new 1.93 tok/s 258.9 MB/token
+UI reply=1 decode_tok_s=1.930 engine_tok_s=1.928 diff=0.08% ttft_ms=21099 (engine 21074) mb_per_token=258.9 (engine 258.9) prefill=cold
+PREFIX reply=1 hit=0 restored_tokens=n/a restore=n/a ms (load n/a ms, state n/a MB; re-land n/a ms, n/a MB read, n/a read / n/a kept / n/a moved) saved=1 save=700 ms (66.6 MB) cache=1 states 67 MB
+PREFILL reply=1 tokens=41 seconds=19.93 read=10984.9 MB records=6208 drive=0.551 GB/s (busy 0.575) blocked_on_reads=18937 ms gpu=5031 ms encode=947 ms template=31.8 ms first_token=402.9 ms
+SPLIT reply=1 tokens=40 tok/s=1.928 ms/token=518.5 encode=15.9 blocked_on_reads=487.3 (name 1.8 land 485.5) sync_wait=14.5 gpu=125.1 ms gpu_busy=24.1% drive=0.499 GB/s busy=0.519 GB/s (96% of the time) MiB/token=246.9 in_memory=0.7813 sync_reads=0 records/token=146.32 reads_in_flight=7.65
+MEM end of reply 1 (40 tokens, max_new): footprint=2.973 peak=2.979 avail=1.322 limit~4.295 GB | mlx active=2.854 peak=2.861 cache=0.007 GB | resident=2.890 compressed=0.080 GB | thermal=nominal
+[prefix-cache] hit: 41 of 41 tokens from n0000041-9945eee9eebd0970ac068d294e797476f5b4d04d230f33efd277999c85dfbb47.safetensors | state 66.6 MB loaded in 0.105 s | re-landed 510 records (902.4 MB) in 1.926 s, 101 kept in place, 149 moved, 760 held
+MEM reply 2 first token: footprint=2.982 peak=3.004 avail=1.313 limit~4.295 GB | mlx active=2.854 peak=2.861 cache=0.013 GB | resident=2.881 compressed=0.093 GB | thermal=nominal
+MEM reply 2 token 10: footprint=2.982 peak=3.004 avail=1.313 limit~4.295 GB | mlx active=2.854 peak=2.861 cache=0.013 GB | resident=2.890 compressed=0.086 GB | thermal=nominal
+MEM reply 2 token 20: footprint=2.982 peak=3.004 avail=1.313 limit~4.295 GB | mlx active=2.854 peak=2.861 cache=0.013 GB | resident=2.891 compressed=0.085 GB | thermal=nominal
+MEM reply 2 token 30: footprint=2.981 peak=3.004 avail=1.314 limit~4.295 GB | mlx active=2.853 peak=2.861 cache=0.014 GB | resident=2.891 compressed=0.085 GB | thermal=nominal
+MEM reply 2 token 40: footprint=2.982 peak=3.004 avail=1.313 limit~4.295 GB | mlx active=2.853 peak=2.861 cache=0.013 GB | resident=2.890 compressed=0.086 GB | thermal=nominal
+REPLY tokens=40 reason=max_new 2.27 tok/s 258.9 MB/token
+UI reply=2 decode_tok_s=2.272 engine_tok_s=2.270 diff=0.09% ttft_ms=2440 (engine 2433) mb_per_token=258.9 (engine 258.9) prefill=restored prefix
+PREFIX reply=2 hit=1 restored_tokens=41 restore=2036 ms (load 105 ms, state 66.6 MB; re-land 1926 ms, 902.4 MB read, 510 read / 101 kept / 149 moved) saved=0 save=0 ms (0.0 MB) cache=1 states 67 MB
+PREFILL reply=2 tokens=0 seconds=0.00 read=0.0 MB records=0 drive=0.000 GB/s (busy 0.000) blocked_on_reads=0 ms gpu=0 ms encode=0 ms template=15.2 ms first_token=351.2 ms
+SPLIT reply=2 tokens=40 tok/s=2.270 ms/token=440.6 encode=15.0 blocked_on_reads=408.7 (name 1.8 land 406.8) sync_wait=16.3 gpu=126.0 ms gpu_busy=28.6% drive=0.588 GB/s busy=0.617 GB/s (95% of the time) MiB/token=246.9 in_memory=0.7813 sync_reads=0 records/token=146.32 reads_in_flight=7.58
+MEM end of reply 2 (40 tokens, max_new): footprint=2.982 peak=3.004 avail=1.313 limit~4.295 GB | mlx active=2.853 peak=2.861 cache=0.013 GB | resident=2.891 compressed=0.085 GB | thermal=nominal
+PREFIXTEST cold: first token 21099 ms (engine ttft 21074 ms: prefill 41 tokens 19.93 s, save 700 ms 66.6 MB), 10985 MB read before it
+PREFIXTEST restored: first token 2440 ms (engine ttft 2433 ms: restore 2036 ms = load 105 + re-land 1926 ms, 902 MB read, 510 read / 101 kept / 149 moved; prefill 0 tokens), 902 MB read before it
+CHECK engine_ready=true
+CHECK ids_equal_cold_vs_restored=true
+CHECK reply1_cold=true
+CHECK reply1_state_saved=true
+CHECK reply2_all_prompt_tokens_restored=true
+CHECK reply2_restored=true
+CHECK ui_rate_matches_engine_2pct=true
+PREFIXTEST PASS
+AUTOTEST PASS (prefixTest)
+console: runs/console-20261104-164733.log
+=== chatOnce budget cap
+16:48:41  Acquired tunnel connection to device.
+16:48:41  Enabling developer disk image services.
+16:48:41  Acquired usage assertion.
+App installed:
+? bundleID: com.example.phonestore
+? installationURL: file:///private/var/containers/Bundle/Application/157E8A0F-7ED2-4261-9F3D-E6F3C1A1B005/PhoneStoreApp.app/
+? launchServicesIdentifier: unknown
+? databaseUUID: E966648E-9F55-417B-9841-F2E76FA47A63
+? databaseSequenceNumber: 2960
+? options: 
+pulled runs/probe-20261104-164845.json
+pulled runs/autotest-20261104-164845.json
+pulled runs/mem-20261104-164845.jsonl
+pulled runs/ui-20261104-164845.json
+ENGINE PhoneStore (native: -autotest always runs the native engine) mode=prefetch
+DIAG memWarn=log chatOnce=Explain how a refrigerator keeps food cold, step by step, for a curious ten-year-old. Then list three ways to make it use less electricity. mode=prefetch prefixCache=on
+MEM launch: footprint=0.007 peak=0.007 avail=4.288 limit~4.295 GB | mlx active=n/a peak=n/a cache=n/a GB | resident=0.025 compressed=0.000 GB | thermal=nominal
+PROBE avail=4.28GB phys=5.94GB disk_free=5.06GB thermal=nominal cap=19 (budget) layer_caps=auto:760 slots=760 layout=slim store=complete (0 problems) codec_layers=0
+LOAD tokenizer + chat template from model/
+LOAD kernels: mlx.metallib (-fno-fast-math): /var/containers/Bundle/Application/157E8A0F-7ED2-4261-9F3D-E6F3C1A1B005/PhoneStoreApp.app/mlx.metallib
+MEM memory warning #1 (during load): footprint=2.939 peak=2.939 avail=1.356 limit~4.295 GB | mlx active=2.783 peak=2.783 cache=0.000 GB | resident=1.465 compressed=0.139 GB | thermal=nominal
+LOAD loaded in 2.4s
+EVENT memory warning (during load; footprint 2.939 GB, available 1.356 GB, MLX active 2.783 GB); not stopped (-memWarn log)
+LOAD ready in 2.8s: prefetch, cap 19, 2.78 GB planned, layout slim
+LOAD layout slim: embeddings /var/mobile/Containers/Data/Application/43A6843C-2FDB-4D30-8683-D40C284D2EDD/Documents/model/embeddings.safetensors; resident /var/mobile/Containers/Data/Application/43A6843C-2FDB-4D30-8683-D40C284D2EDD/Documents/model/cache/resident_q4.safetensors; routers /var/mobile/Containers/Data/Application/43A6843C-2FDB-4D30-8683-D40C284D2EDD/Documents/model/cache/routers_k4_r8.safetensors
+LOAD ready: native runtime (mlx-swift 0.32.3, MLX core 0.32.3); prefetch, int8 lag-4 routers, cap 19 (auto:760, 760 slots); layout slim; codec: 0 layers .psc; kernels: mlx.metallib (-fno-fast-math): /var/containers/Bundle/Application/157E8A0F-7ED2-4261-9F3D-E6F3C1A1B005/PhoneStoreApp.app/mlx.metallib
+MEM after load: footprint=2.939 peak=2.939 avail=1.356 limit~4.295 GB | mlx active=2.783 peak=2.783 cache=0.000 GB | resident=1.470 compressed=0.136 GB | thermal=nominal
+CHATONCE Explain how a refrigerator keeps food cold, step by step, for a curious ten-year-old. Then list three ways to make it use less electricity.
+[prefix-cache] miss: no cached prefix of the 43 tokens | cache: 1 entries, 0.07 GB
+[prefix-cache] saved 43 tokens -> n0000043-6eb60ae750c6133c678f018e6788514606ec2431ec2640fddb0c6f545274a9fc.safetensors (66.7 MB, 1.343 s) | cache: 2 entries, 0.13 GB
+MEM reply 1 first token: footprint=2.973 peak=2.974 avail=1.322 limit~4.295 GB | mlx active=2.854 peak=2.861 cache=0.008 GB | resident=2.874 compressed=0.093 GB | thermal=nominal
+MEM reply 1 token 10: footprint=2.975 peak=2.975 avail=1.320 limit~4.295 GB | mlx active=2.853 peak=2.861 cache=0.008 GB | resident=2.891 compressed=0.084 GB | thermal=nominal
+MEM reply 1 token 20: footprint=2.977 peak=2.977 avail=1.318 limit~4.295 GB | mlx active=2.853 peak=2.861 cache=0.008 GB | resident=2.892 compressed=0.084 GB | thermal=nominal
+MEM reply 1 token 30: footprint=2.975 peak=2.977 avail=1.320 limit~4.295 GB | mlx active=2.854 peak=2.861 cache=0.008 GB | resident=2.888 compressed=0.087 GB | thermal=nominal
+MEM reply 1 token 40: footprint=2.975 peak=2.977 avail=1.320 limit~4.295 GB | mlx active=2.854 peak=2.861 cache=0.008 GB | resident=2.885 compressed=0.087 GB | thermal=nominal
+MEM reply 1 token 50: footprint=2.981 peak=2.981 avail=1.314 limit~4.295 GB | mlx active=2.854 peak=2.861 cache=0.008 GB | resident=2.898 compressed=0.085 GB | thermal=nominal
+MEM reply 1 token 60: footprint=2.982 peak=2.988 avail=1.313 limit~4.295 GB | mlx active=2.854 peak=2.861 cache=0.008 GB | resident=2.901 compressed=0.084 GB | thermal=nominal
+MEM reply 1 token 70: footprint=2.982 peak=2.991 avail=1.313 limit~4.295 GB | mlx active=2.853 peak=2.861 cache=0.008 GB | resident=2.896 compressed=0.085 GB | thermal=nominal
+MEM reply 1 token 80: footprint=2.982 peak=2.991 avail=1.313 limit~4.295 GB | mlx active=2.853 peak=2.861 cache=0.008 GB | resident=2.899 compressed=0.085 GB | thermal=nominal
+MEM reply 1 token 90: footprint=2.982 peak=2.991 avail=1.313 limit~4.295 GB | mlx active=2.854 peak=2.861 cache=0.008 GB | resident=2.899 compressed=0.085 GB | thermal=nominal
+MEM reply 1 token 100: footprint=2.986 peak=2.991 avail=1.309 limit~4.295 GB | mlx active=2.853 peak=2.863 cache=0.010 GB | resident=2.902 compressed=0.084 GB | thermal=nominal
+MEM reply 1 token 110: footprint=2.992 peak=2.997 avail=1.303 limit~4.295 GB | mlx active=2.854 peak=2.863 cache=0.010 GB | resident=2.905 compressed=0.084 GB | thermal=nominal
+MEM reply 1 token 120: footprint=2.989 peak=3.003 avail=1.306 limit~4.295 GB | mlx active=2.854 peak=2.863 cache=0.010 GB | resident=2.902 compressed=0.084 GB | thermal=nominal
+MEM reply 1 token 130: footprint=2.995 peak=3.005 avail=1.300 limit~4.295 GB | mlx active=2.853 peak=2.863 cache=0.010 GB | resident=2.904 compressed=0.083 GB | thermal=nominal
+EVENT thermal -> fair
+MEM reply 1 token 140: footprint=2.996 peak=3.005 avail=1.299 limit~4.295 GB | mlx active=2.854 peak=2.863 cache=0.010 GB | resident=2.906 compressed=0.084 GB | thermal=fair
+MEM reply 1 token 150: footprint=2.997 peak=3.007 avail=1.298 limit~4.295 GB | mlx active=2.854 peak=2.863 cache=0.010 GB | resident=2.909 compressed=0.083 GB | thermal=fair
+MEM reply 1 token 160: footprint=2.996 peak=3.007 avail=1.299 limit~4.295 GB | mlx active=2.853 peak=2.863 cache=0.010 GB | resident=2.909 compressed=0.084 GB | thermal=fair
+MEM reply 1 token 170: footprint=2.991 peak=3.008 avail=1.304 limit~4.295 GB | mlx active=2.854 peak=2.863 cache=0.010 GB | resident=2.903 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 180: footprint=2.999 peak=3.008 avail=1.296 limit~4.295 GB | mlx active=2.853 peak=2.863 cache=0.011 GB | resident=2.908 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 190: footprint=2.992 peak=3.008 avail=1.303 limit~4.295 GB | mlx active=2.853 peak=2.863 cache=0.010 GB | resident=2.903 compressed=0.086 GB | thermal=fair
+MEM reply 1 token 200: footprint=3.001 peak=3.008 avail=1.294 limit~4.295 GB | mlx active=2.854 peak=2.863 cache=0.010 GB | resident=2.912 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 210: footprint=2.994 peak=3.009 avail=1.301 limit~4.295 GB | mlx active=2.853 peak=2.863 cache=0.011 GB | resident=2.912 compressed=0.086 GB | thermal=fair
+MEM reply 1 token 220: footprint=3.013 peak=3.014 avail=1.282 limit~4.295 GB | mlx active=2.859 peak=2.865 cache=0.016 GB | resident=2.907 compressed=0.086 GB | thermal=fair
+MEM reply 1 token 230: footprint=3.015 peak=3.031 avail=1.280 limit~4.295 GB | mlx active=2.859 peak=2.868 cache=0.016 GB | resident=2.912 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 240: footprint=3.007 peak=3.032 avail=1.288 limit~4.295 GB | mlx active=2.858 peak=2.868 cache=0.016 GB | resident=2.901 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 250: footprint=3.018 peak=3.032 avail=1.277 limit~4.295 GB | mlx active=2.859 peak=2.868 cache=0.016 GB | resident=2.915 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 260: footprint=3.018 peak=3.037 avail=1.277 limit~4.295 GB | mlx active=2.859 peak=2.868 cache=0.015 GB | resident=2.915 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 270: footprint=3.018 peak=3.038 avail=1.277 limit~4.295 GB | mlx active=2.859 peak=2.868 cache=0.016 GB | resident=2.918 compressed=0.086 GB | thermal=fair
+MEM reply 1 token 280: footprint=3.010 peak=3.038 avail=1.285 limit~4.295 GB | mlx active=2.859 peak=2.868 cache=0.016 GB | resident=2.916 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 290: footprint=3.020 peak=3.038 avail=1.275 limit~4.295 GB | mlx active=2.858 peak=2.868 cache=0.016 GB | resident=2.921 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 300: footprint=3.021 peak=3.052 avail=1.274 limit~4.295 GB | mlx active=2.859 peak=2.868 cache=0.016 GB | resident=2.921 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 310: footprint=3.022 peak=3.052 avail=1.273 limit~4.295 GB | mlx active=2.859 peak=2.868 cache=0.016 GB | resident=2.922 compressed=0.086 GB | thermal=fair
+MEM reply 1 token 320: footprint=3.024 peak=3.052 avail=1.271 limit~4.295 GB | mlx active=2.858 peak=2.868 cache=0.016 GB | resident=2.916 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 330: footprint=3.025 peak=3.052 avail=1.270 limit~4.295 GB | mlx active=2.859 peak=2.868 cache=0.016 GB | resident=2.916 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 340: footprint=3.022 peak=3.052 avail=1.273 limit~4.295 GB | mlx active=2.859 peak=2.868 cache=0.016 GB | resident=2.917 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 350: footprint=3.001 peak=3.052 avail=1.294 limit~4.295 GB | mlx active=2.858 peak=2.868 cache=0.016 GB | resident=2.914 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 360: footprint=3.015 peak=3.052 avail=1.280 limit~4.295 GB | mlx active=2.859 peak=2.868 cache=0.016 GB | resident=2.918 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 370: footprint=3.030 peak=3.055 avail=1.265 limit~4.295 GB | mlx active=2.859 peak=2.868 cache=0.015 GB | resident=2.920 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 380: footprint=3.029 peak=3.055 avail=1.266 limit~4.295 GB | mlx active=2.859 peak=2.868 cache=0.016 GB | resident=2.924 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 390: footprint=3.032 peak=3.056 avail=1.263 limit~4.295 GB | mlx active=2.859 peak=2.868 cache=0.016 GB | resident=2.932 compressed=0.086 GB | thermal=fair
+MEM reply 1 token 400: footprint=3.014 peak=3.058 avail=1.280 limit~4.295 GB | mlx active=2.859 peak=2.868 cache=0.015 GB | resident=2.908 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 410: footprint=3.036 peak=3.058 avail=1.259 limit~4.295 GB | mlx active=2.859 peak=2.868 cache=0.016 GB | resident=2.930 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 420: footprint=3.037 peak=3.066 avail=1.258 limit~4.295 GB | mlx active=2.859 peak=2.868 cache=0.016 GB | resident=2.938 compressed=0.084 GB | thermal=fair
+MEM reply 1 token 430: footprint=3.039 peak=3.069 avail=1.256 limit~4.295 GB | mlx active=2.858 peak=2.868 cache=0.016 GB | resident=2.938 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 440: footprint=3.039 peak=3.081 avail=1.255 limit~4.295 GB | mlx active=2.859 peak=2.868 cache=0.016 GB | resident=2.939 compressed=0.084 GB | thermal=fair
+MEM reply 1 token 450: footprint=3.041 peak=3.081 avail=1.254 limit~4.295 GB | mlx active=2.859 peak=2.868 cache=0.016 GB | resident=2.928 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 460: footprint=3.043 peak=3.081 avail=1.252 limit~4.295 GB | mlx active=2.858 peak=2.868 cache=0.016 GB | resident=2.912 compressed=0.084 GB | thermal=fair
+MEM reply 1 token 470: footprint=3.059 peak=3.081 avail=1.236 limit~4.295 GB | mlx active=2.864 peak=2.869 cache=0.026 GB | resident=2.929 compressed=0.085 GB | thermal=fair
+MEM reply 1 token 480: footprint=3.058 peak=3.081 avail=1.237 limit~4.295 GB | mlx active=2.864 peak=2.873 cache=0.026 GB | resident=2.943 compressed=0.085 GB | thermal=fair
+EVENT thermal -> serious
+MEM reply 1 token 490: footprint=3.061 peak=3.081 avail=1.234 limit~4.295 GB | mlx active=2.864 peak=2.873 cache=0.027 GB | resident=2.944 compressed=0.085 GB | thermal=serious
+MEM reply 1 token 500: footprint=3.063 peak=3.098 avail=1.232 limit~4.295 GB | mlx active=2.864 peak=2.873 cache=0.026 GB | resident=2.946 compressed=0.085 GB | thermal=serious
+MEM memory warning #2 (reply 1, token 505): footprint=3.062 peak=3.098 avail=1.233 limit~4.295 GB | mlx active=2.864 peak=2.873 cache=0.026 GB | resident=2.945 compressed=0.086 GB | thermal=serious
+EVENT memory warning (reply 1, token 505; footprint 3.062 GB, available 1.233 GB, MLX active 2.864 GB); not stopped (-memWarn log)
+MEM reply 1 token 510: footprint=3.060 peak=3.098 avail=1.235 limit~4.295 GB | mlx active=2.864 peak=2.873 cache=0.026 GB | resident=2.941 compressed=0.082 GB | thermal=serious
+REPLY tokens=512 reason=max_new 2.74 tok/s 199.4 MB/token
+UI reply=1 decode_tok_s=2.745 engine_tok_s=2.744 diff=0.01% ttft_ms=23229 (engine 23221) mb_per_token=199.4 (engine 199.4) prefill=cold
+PREFIX reply=1 hit=0 restored_tokens=n/a restore=n/a ms (load n/a ms, state n/a MB; re-land n/a ms, n/a MB read, n/a read / n/a kept / n/a moved) saved=1 save=1343 ms (66.7 MB) cache=2 states 133 MB
+PREFILL reply=1 tokens=43 seconds=20.34 read=11319.3 MB records=6397 drive=0.557 GB/s (busy 0.584) blocked_on_reads=19245 ms gpu=5316 ms encode=889 ms template=38.3 ms first_token=1455.1 ms
+SPLIT reply=1 tokens=512 tok/s=2.744 ms/token=364.4 encode=14.4 blocked_on_reads=334.2 (name 2.2 land 332.0) sync_wait=14.9 gpu=119.9 ms gpu_busy=32.9% drive=0.547 GB/s busy=0.581 GB/s (94% of the time) MiB/token=190.2 in_memory=0.8698 sync_reads=0 records/token=112.71 reads_in_flight=7.46
+MEM end of reply 1 (512 tokens, max_new): footprint=3.073 peak=3.098 avail=1.222 limit~4.295 GB | mlx active=2.864 peak=2.874 cache=0.027 GB | resident=2.941 compressed=0.075 GB | thermal=serious
+SHOWN prefill = cold
+SHOWN settings_last_reply = 512 tokens, max_new, 2.74 tok/s
+SHOWN settings_live_rate = 2.74
+SHOWN stats_bar_mb = 199 MB/tok
+SHOWN stats_bar_rate = 2.74 tok/s
+SHOWN stats_bar_ttft = TTFT 23.2 s
+console: runs/console-20261104-164845.log

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Merged with the generated keys (GENERATE_INFOPLIST_FILE = YES). Xcode's generator has no
+	     INFOPLIST_KEY_ for UIFileSharingEnabled, so it lives here: Documents/ shows in Finder's Files tab. -->
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<!-- Whether the device build is signed with com.apple.developer.kernel.increased-memory-limit
+	     (PhoneStoreApp.entitlements; build setting PS_INCREASED_MEMORY_LIMIT), for the -memLimitTest report. -->
+	<!-- Launch screen: the app's bubble on the system background. iOS: the loose Icons/LaunchLogo@2x/@3x.png (loose
+	     files build on every Xcode install, with or without an iOS simulator runtime); Mac Catalyst: Assets.xcassets. -->
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIImageName</key>
+		<string>LaunchLogo</string>
+	</dict>
+	<!-- iOS icon from loose files (Icons/AppIcon60x60@2x/@3x.png), for the same reason; Catalyst uses Assets.xcassets AppIcon. -->
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>AppIcon60x60</string>
+			</array>
+		</dict>
+	</dict>
+	<!-- The model download (ModelDownloader) uses https to huggingface.co; plain http is allowed only to local hosts, for
+	     tests against a local copy of the store (-manifestURL http://127.0.0.1:8765/manifest.json). -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+	<key>PSIncreasedMemoryLimit</key>
+	<string>$(PS_INCREASED_MEMORY_LIMIT)</string>
+</dict>
+</plist>
